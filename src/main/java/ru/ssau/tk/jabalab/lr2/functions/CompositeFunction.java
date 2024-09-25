@@ -1,12 +1,17 @@
-/*
- * Copyright (c) 2024. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
- * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
- * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
- * Vestibulum commodo. Ut rhoncus gravida arcu.
- */
-
 package ru.ssau.tk.jabalab.lr2.functions;
 
-public class CompositeFunction {
+public class CompositeFunction implements MathFunction {
+    private final MathFunction firstFunction;
+    private final MathFunction secondFunction;
+
+    public CompositeFunction(MathFunction firstFunction, MathFunction secondFunction) {
+        this.firstFunction = firstFunction;
+        this.secondFunction = secondFunction;
+    }
+
+    @Override
+    public double apply(double x) {
+        double firstResult = firstFunction.apply(x);
+        return secondFunction.apply(firstResult);
+    }
 }
