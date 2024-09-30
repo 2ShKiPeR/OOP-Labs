@@ -4,9 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ChaplyginFunctionTest {
-
     private final ChaplyginFunction chaplyginFunction = new ChaplyginFunction();
-
     @Test
     public void testSingleValue() {
         double input = Math.PI / 2;
