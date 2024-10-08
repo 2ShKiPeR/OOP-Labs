@@ -12,6 +12,16 @@ public class ChaplyginMethodFunction implements MathFunction {
     int maxIterations;
     int steps;
 
+    /*
+     Численное интегрирование методом прямоугольников (левых прямоугольников).
+     Func - функция, которую интегрируем (например, f(x, u))
+     a - нижний предел интегрирования (начальная точка интервала)
+     b - верхний предел интегрирования (конечная точка интервала)
+     steps - количество шагов (количество подынтервалов, на которые делится интервал [a, b])
+     u_n - текущее значение переменной u, используемое для вычисления функции
+     return - приближенное значение интеграла функции на интервале [a, b]
+     */
+
     // Метод интегрирования методом прямоугольников
     public static double integrateRectangles(BiFunction<Double, Double, Double> func, double a, double b, int steps, double u_n) {
         double h = (b - a) / steps; // Шаг интегрирования
