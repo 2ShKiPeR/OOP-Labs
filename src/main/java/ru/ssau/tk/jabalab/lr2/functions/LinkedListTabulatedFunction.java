@@ -1,10 +1,14 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 
-public class LinkedListTabulatedFunction extends AbstractTabulatedFunction {
+public class LinkedListTabulatedFunction extends AbstractTabulatedFunction implements Removable {
     // Голова списка
     private Node head;
     // Количество узлов в списке
     private int count;
+
+    public Node getHead() {
+        return head; // Предполагая, что head - это поле в вашем классе
+    }
 
     public LinkedListTabulatedFunction() {
         head = null;
@@ -184,5 +188,31 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction {
         Node ceilingNode = floorIndex + 1 < count ? getNode(floorIndex + 1) : floorNode; // Узел с наименьшим x
         return interpolate(x, floorNode.x, ceilingNode.x, floorNode.y, ceilingNode.y); // Интерполяция между узлами
     }
+    @Override
+    public void remove(int index) {
+        if (index < 0 || index >= count) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
 
+        Node nodeToRemove = getNode(index);
+
+        if (count == 1) {
+            // Если узел единственный
+            head = null;
+        } else {
+            // Если это не единственный узел
+            Node prevNode = nodeToRemove.prev;
+            Node nextNode = nodeToRemove.next;
+
+            prevNode.next = nextNode; // Предыдущий узел указывает на следующий
+            nextNode.prev = prevNode; // Следующий узел указывает на предыдущий
+
+            // Если удаляем голову, нужно обновить голову
+            if (nodeToRemove == head) {
+                head = nextNode; // Обновляем голову
+            }
+        }
+
+        count--; // Уменьшаем количество узлов
+    }
 }

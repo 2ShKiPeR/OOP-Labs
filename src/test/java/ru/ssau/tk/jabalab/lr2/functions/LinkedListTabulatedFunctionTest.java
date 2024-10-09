@@ -210,12 +210,57 @@ public class LinkedListTabulatedFunctionTest {
         assertEquals(4.0, function.getX(3));  // предпоследний элемент (индекс 3)
     }
 
+    @Test
+    public void testRemoveValidIndex() {
+        function.remove(1); // Удаляем элемент с индексом 1 (2.0, 4.0, 6.0)
+        assertEquals(2, function.getCount()); // Проверяем количество элементов
+        assertEquals(1.0, function.getX(0)); // Проверяем оставшийся элемент
+        assertEquals(6.0, function.getY(1)); // Проверяем, что 6.0 остался на месте, индекс 1
+    }
+
+    // Тестирование метода remove для удаления головы списка
+    @Test
+    public void testRemoveHead() {
+        function.remove(0); // Удаляем голову (значение 1.0)
+        assertEquals(2, function.getCount()); // Количество должно уменьшиться
+        assertEquals(2.0, function.getX(0)); // Теперь голова должна быть 2.0
+    }
+
+    // Тестирование метода remove для удаления последнего элемента
+    @Test
+    public void testRemoveLastElement() {
+        function.remove(2); // Удаляем последний элемент
+        assertEquals(2, function.getCount()); // Количество должно уменьшиться
+        assertThrows(IndexOutOfBoundsException.class, () -> function.getX(2)); // Проверяем, что доступ к индексу 2 выбрасывает исключение
+    }
+
+    // Тестирование метода remove с индексом вне границ
+    @Test
+    public void testRemoveIndexOutOfBounds() {
+        assertThrows(IndexOutOfBoundsException.class, () -> function.remove(-1)); // Неверный индекс
+        assertThrows(IndexOutOfBoundsException.class, () -> function.remove(3)); // Неверный индекс (больше, чем размер)
+    }
+
     // Новые тесты для конструктора из MathFunction
     private static class TestMathFunction implements MathFunction {
         @Override
         public double apply(double x) {
             return 2 * x; // Простая линия y = 2x
         }
+    }
+    @Test
+    public void testRemoveSingleNode() {
+        // Создание функции с одним узлом
+        double[] xValues = {1.0};
+        double[] yValues = {2.0};
+        function = new LinkedListTabulatedFunction(xValues, yValues);
+
+        // Удаление единственного узла
+        function.remove(0);
+
+        // Проверяем, что голова теперь равна null
+        assertNull(function.getHead()); // Предположим, у вас есть метод getHead для получения головы
+        assertEquals(0, function.getCount()); // Количество узлов должно быть 0
     }
 
     // Тестирование конструктора из MathFunction с валидными параметрами
