@@ -184,4 +184,5 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction {
         Node ceilingNode = floorIndex + 1 < count ? getNode(floorIndex + 1) : floorNode; // Узел с наименьшим x
         return interpolate(x, floorNode.x, ceilingNode.x, floorNode.y, ceilingNode.y); // Интерполяция между узлами
     }
+
 }
