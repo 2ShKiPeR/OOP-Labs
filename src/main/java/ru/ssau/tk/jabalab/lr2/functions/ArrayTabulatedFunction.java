@@ -4,16 +4,20 @@ import java.util.Arrays;
 import java.util.function.Function;
 import java.util.NoSuchElementException;
 
-public class ArrayTabulatedFunction extends AbstractTabulatedFunction {
+public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements Insertable {
     protected double[] arrX;
     protected double[] arrY;
     protected int count;
+    private static final int INITIAL_CAPACITY = 10; // Начальный размер массива
+    private static final double EXPANSION_FACTOR = 1.5; // Коэффициент расширения массива
 
     public ArrayTabulatedFunction(double[] xValues, double[] yValues) {
         if (xValues.length <= 1) throw new IllegalArgumentException("xValues length must be greater than 1");
         count = xValues.length;
-        arrX = Arrays.copyOf(xValues, xValues.length);
-        arrY = Arrays.copyOf(yValues, yValues.length);
+        arrX = new double[Math.max(INITIAL_CAPACITY, xValues.length)];
+        arrY = new double[arrX.length];
+        System.arraycopy(xValues, 0, arrX, 0, count);
+        System.arraycopy(yValues, 0, arrY, 0, count);
     }
 
     public ArrayTabulatedFunction(MathFunction source, double xFrom, double xTo, int count) {
@@ -23,8 +27,8 @@ public class ArrayTabulatedFunction extends AbstractTabulatedFunction {
             xTo = tmp;
         }
         this.count = count;
-        arrX = new double[count];
-        arrY = new double[count];
+        arrX = new double[Math.max(INITIAL_CAPACITY, count)];
+        arrY = new double[arrX.length];
         arrX[0] = xFrom;
         arrX[count - 1] = xTo;
         double step = (xTo - xFrom) / (count - 1);
@@ -33,6 +37,39 @@ public class ArrayTabulatedFunction extends AbstractTabulatedFunction {
         for (int i = 0; i < count; i++)
             arrY[i] = source.apply(arrX[i]);
     }
+
+    @Override
+    public void insert(double x, double y) {
+        int index = indexOfX(x);
+
+        if (index != -1) {
+            arrY[index] = y; // Заменяем существующее значение
+            return;
+        }
+
+        // Создаем новый массив, если нет места для вставки
+        if (count >= arrX.length) {
+            int newLength = (int) (arrX.length * EXPANSION_FACTOR);
+            arrX = Arrays.copyOf(arrX, newLength);
+            arrY = Arrays.copyOf(arrY, newLength);
+        }
+
+        // Поиск позиции для вставки
+        int insertIndex = 0;
+        while (insertIndex < count && arrX[insertIndex] < x) {
+            insertIndex++;
+        }
+
+        // Сдвигаем элементы
+        System.arraycopy(arrX, insertIndex, arrX, insertIndex + 1, count - insertIndex);
+        System.arraycopy(arrY, insertIndex, arrY, insertIndex + 1, count - insertIndex);
+
+        // Вставляем новое значение
+        arrX[insertIndex] = x;
+        arrY[insertIndex] = y;
+        count++;
+    }
+
 
     @Override
     public double getY(int index) {
