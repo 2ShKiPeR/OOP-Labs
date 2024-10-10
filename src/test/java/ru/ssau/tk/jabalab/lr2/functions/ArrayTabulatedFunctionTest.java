@@ -45,4 +45,78 @@ public class ArrayTabulatedFunctionTest {
 
         assertEquals(12, function.getCount()); // Проверяем, что количество элементов увеличилось
     }
+
+    @Test
+    void getYTest() {
+        double[] arrX = {1, 2, 3, 4, 5};
+        double[] arrY = {1, 2, 3, 4, 5};
+        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
+        assertEquals(3, func.getX(2));
+    }
+
+    @Test
+    void setYTest() {
+        double[] arrX = {1, 2, 3, 4, 5};
+        double[] arrY = {1, 2, 3, 4, 5};
+        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
+        func.setY(2, 5);
+        assertEquals(5, func.getY(2));
+    }
+
+    @Test
+    void floorIndexOfXTest() {
+        double[] arrX = {1, 2, 3, 4, 5};
+        double[] arrY = {1, 2, 3, 4, 5};
+        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
+        assertEquals(4, func.floorIndexOfX(5));
+    }
+
+    @Test
+    void leftBoundTest() {
+        double[] arrX = {1, 2, 3, 4, 5};
+        double[] arrY = {1, 2, 3, 4, 5};
+        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
+        assertEquals(1, func.leftBound());
+    }
+
+    @Test
+    void rightBoundTest() {
+        double[] arrX = {1, 2, 3, 4, 5};
+        double[] arrY = {1, 2, 3, 4, 5};
+        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
+        assertEquals(5, func.rightBound());
+    }
+
+    @Test
+    void getXTest() {
+        double[] arrX = {1, 2, 3, 4, 5};
+        double[] arrY = {1, 2, 3, 4, 5};
+        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
+        assertEquals(4, func.getX(3));
+    }
+
+    @Test
+    void extrapolateLeftTest() {
+        double[] arrX = {1, 2, 3, 4, 5};
+        double[] arrY = {1, 2, 3, 4, 5};
+        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
+        assertEquals(arrY[0] + (arrY[1] - arrY[0]) / (arrX[1] - arrX[0]) * (-1 - arrX[0]),func.apply(-1) );
+    }
+
+    @Test
+    void extrapolateRightTest() {
+        double[] arrX = {1, 2, 3, 4, 5};
+        double[] arrY = {1, 2, 3, 4, 5};
+        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
+        assertEquals(arrY[func.getCount() - 2] + (arrY[func.getCount() - 1] - arrY[func.getCount() - 2]) / (arrX[func.getCount() - 1] - arrX[func.getCount() - 2]) * (6 - arrX[func.getCount() - 2]), func.apply(6));
+    }
+
+    @Test
+    void interpolateTest() {
+        double[] arrX = {1, 2, 3, 4, 5};
+        double[] arrY = {1, 2, 3, 4, 5};
+        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
+        int floorIndex = func.floorIndexOfX(4.5);
+        assertEquals( arrY[floorIndex] + (arrY[floorIndex + 1] - arrY[floorIndex]) / (arrX[floorIndex + 1] - arrX[floorIndex]) * (4.5 - arrX[floorIndex]), func.apply(4.5));
+    }
 }
