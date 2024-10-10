@@ -24,7 +24,7 @@ public class SimpleIterationFunction implements MathFunction {
 
         // Итерационный процесс
         for (int iteration = 0; iteration < maxIterations; iteration++) {
-            boolean converged = true;
+            boolean flag = true;
 
             // Применяем функцию g для каждой переменной
             for (int i = 0; i < equations.length; i++) {
@@ -32,12 +32,12 @@ public class SimpleIterationFunction implements MathFunction {
 
                 // Проверяем, достигнута ли сходимость для каждой переменной
                 if (Math.abs(nextGuess[i] - currentGuess[i]) >= epsilon) {
-                    converged = false;
+                    flag = false;
                 }
             }
 
             // Если все переменные удовлетворяют точности, то решение найдено
-            if (converged) {
+            if (flag) {
                 return nextGuess[0];
             }
 
