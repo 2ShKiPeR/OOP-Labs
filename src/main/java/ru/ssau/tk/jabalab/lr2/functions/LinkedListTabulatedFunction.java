@@ -1,6 +1,6 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 
-public class LinkedListTabulatedFunction extends AbstractTabulatedFunction implements Removable {
+public class LinkedListTabulatedFunction extends AbstractTabulatedFunction implements Insertable, Removable {
     // Голова списка
     private Node head;
     // Количество узлов в списке
@@ -215,4 +215,50 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
 
         count--; // Уменьшаем количество узлов
     }
+
+    private void changeHead(double x, double y, Node cur) {
+        Node newNode = new Node(x, y);
+        newNode.next = cur;
+        newNode.prev = cur.prev;
+        cur.prev.next = newNode;
+        cur.prev = newNode;
+        head = newNode;
+        count++;
+    }
+
+
+    @Override
+    public void insert(double x, double y) {
+        if (head == null) {
+            addNode(x, y);
+            return;
+        }
+        Node cur = head;
+        if (cur.x > x) {
+            changeHead(x, y, cur);
+            return;
+        } else if (cur.x == x) {
+            cur.y = y;
+            return;
+        } else if (cur.prev.x < x) {
+            addNode(x, y);
+            return;
+        }
+        while (cur.next != head.prev) {
+            if (cur.next.x > x) {
+                Node newNode = new Node(x, y);
+                newNode.next = cur.next;
+                newNode.prev = cur;
+                cur.next = newNode;
+                newNode.next.prev = newNode;
+                count++;
+                return;
+            } else if (cur.next.x == x) {
+                cur.next.y = y;
+                return;
+            }
+            cur = cur.next;
+        }
+    }
 }
+
