@@ -29,7 +29,7 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
     }
 
     // Метод для добавления нового узла в конец списка
-    private void addNode(double x, double y) {
+    protected void addNode(double x, double y) {
         Node newNode = new Node(x, y); // Создаем новый узел
         if (head == null) {
             // Если список пустой, новый узел становится головой
@@ -49,10 +49,9 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
 
     // Конструктор для инициализации из массивов xValues и yValues
     public LinkedListTabulatedFunction(double[] xValues, double[] yValues) {
-        if (xValues.length != yValues.length || xValues.length == 0) {
-            throw new IllegalArgumentException("Mismatched or empty arrays");
+        if (xValues.length != yValues.length || xValues.length < 2) {
+            throw new IllegalArgumentException("Mismatched or insufficient arrays");
         }
-        // Добавляем узлы в список
         for (int i = 0; i < xValues.length; i++) {
             addNode(xValues[i], yValues[i]);
         }
@@ -117,16 +116,25 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
 
     @Override
     public double getX(int index) {
+        if (index < 0 || index >= count) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
         return getNode(index).x; // Возвращаем значение x узла
     }
 
     @Override
     public double getY(int index) {
+        if (index < 0 || index >= count) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
         return getNode(index).y; // Возвращаем значение y узла
     }
 
     @Override
     public void setY(int index, double value) {
+        if (index < 0 || index >= count) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
         getNode(index).y = value; // Устанавливаем значение y узла
     }
 
@@ -158,6 +166,8 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
 
     @Override
     protected int floorIndexOfX(double x) {
+        if (x < leftBound()) {
+            throw new IllegalArgumentException("X is less than the left bound");}
         // Определяем индекс, на который будет экстраполировано значение x
         Node current = head;
         for (int i = 0; i < count; i++) {

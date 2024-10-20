@@ -12,7 +12,7 @@ public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements
     private static final double EXPANSION_FACTOR = 1.5; // Коэффициент расширения массива
 
     public ArrayTabulatedFunction(double[] xValues, double[] yValues) {
-        if (xValues.length <= 1) throw new IllegalArgumentException("xValues length must be greater than 1");
+        if (xValues.length <= 1) throw new IllegalArgumentException("Length of xValues must be greater than 1");
         count = xValues.length;
         arrX = new double[Math.max(INITIAL_CAPACITY, xValues.length)];
         arrY = new double[arrX.length];
@@ -21,6 +21,7 @@ public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements
     }
 
     public ArrayTabulatedFunction(MathFunction source, double xFrom, double xTo, int count) {
+        if (count < 2) throw new IllegalArgumentException("Count must be at least 2");
         if (xFrom > xTo) {
             double tmp = xFrom;
             xFrom = xTo;
@@ -70,9 +71,9 @@ public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements
         count++;
     }
 
-
     @Override
     public double getY(int index) {
+        if (index < 0 || index >= count) throw new IndexOutOfBoundsException("Invalid index: " + index);
         return arrY[index];
     }
 
@@ -112,14 +113,14 @@ public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements
 
     @Override
     public double getX(int index) {
+        if (index < 0 || index >= count) throw new IndexOutOfBoundsException("Invalid index: " + index);
         return arrX[index];
     }
 
 
     @Override
     protected int floorIndexOfX(double x) {
-        if (x < arrX[0]) return 0;
-        if (x > arrX[count - 1]) return count;
+        if (x < leftBound() || x > rightBound()) throw new IllegalArgumentException("x is out of bounds");
         if (indexOfX(x) != -1) return indexOfX(x);
         int index = 0;
         for (int i = 1; i < count - 1; i++) {

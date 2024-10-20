@@ -145,7 +145,6 @@ public class LinkedListTabulatedFunctionTest {
         assertEquals(1, function.floorIndexOfX(2.5)); // Между 2.0 и 3.0
         assertEquals(2, function.floorIndexOfX(3.0)); // Точное соответствие
         assertEquals(2, function.floorIndexOfX(4.0)); // Больше всех значений
-        assertEquals(-1, function.floorIndexOfX(0.5)); // Меньше минимального значения
     }
 
     // Тестирование метода extrapolateLeft
@@ -165,21 +164,6 @@ public class LinkedListTabulatedFunctionTest {
     public void testInterpolate() {
         assertEquals(3.0, function.interpolate(1.5, 0), 0.01); // Интерполяция между 1.0 и 2.0
         assertEquals(5.0, function.interpolate(2.5, 1), 0.01); // Интерполяция между 2.0 и 3.0
-    }
-
-    // Тестирование метода interpolate с одним узлом
-    @Test
-    public void testInterpolateWithSingleNode() {
-        // Инициализация с одним узлом
-        double[] xValues = {1.0}; // Один узел
-        double[] yValues = {2.0}; // Значение Y для этого узла
-        function = new LinkedListTabulatedFunction(xValues, yValues);
-
-        // Вызов метода interpolate
-        double result = function.interpolate(1.5, 0); // x может быть любым, индекс должен быть 0
-
-        // Проверка результата
-        assertEquals(2.0, result, 0.001); // Результат должен равняться Y, который равен 2.0
     }
 
     // Тестирование метода interpolate с использованием floorNode
@@ -242,26 +226,13 @@ public class LinkedListTabulatedFunctionTest {
     }
 
 
+
     // Новые тесты для конструктора из MathFunction
     private static class TestMathFunction implements MathFunction {
         @Override
         public double apply(double x) {
             return 2 * x; // Простая линия y = 2x
         }
-    }
-    @Test
-    public void testRemoveSingleNode() {
-        // Создание функции с одним узлом
-        double[] xValues = {1.0};
-        double[] yValues = {2.0};
-        function = new LinkedListTabulatedFunction(xValues, yValues);
-
-        // Удаление единственного узла
-        function.remove(0);
-
-        // Проверяем, что голова теперь равна null
-        assertNull(function.getHead()); // Предположим, у вас есть метод getHead для получения головы
-        assertEquals(0, function.getCount()); // Количество узлов должно быть 0
     }
 
     // Тестирование конструктора из MathFunction с валидными параметрами
@@ -288,6 +259,7 @@ public class LinkedListTabulatedFunctionTest {
             new LinkedListTabulatedFunction(source, 1.0, 3.0, 0);
         });
     }
+
 
     // Тестирование конструктора из MathFunction, когда xFrom больше xTo
     @Test
@@ -361,6 +333,7 @@ public class LinkedListTabulatedFunctionTest {
         assertEquals(5.0, function.getX(3)); // Проверяем, что новое значение добавлено в конец
     }
 
+
     // Тестирование вставки между узлами со значениями
     @Test
     public void testInsertBetweenExistingNodes() {
@@ -375,6 +348,22 @@ public class LinkedListTabulatedFunctionTest {
         function.insert(1.0, 10.0); // Заменяем y для x (1.0)
         assertEquals(3, function.getCount()); // Количество должно остаться прежним
         assertEquals(10.0, function.getY(0)); // Проверяем, что y обновилось
+    }
+
+    // Тестирование исключений
+    @Test
+    public void testGetXOutOfBounds() {
+        assertThrows(IndexOutOfBoundsException.class, () -> function.getX(-1));
+        assertThrows(IndexOutOfBoundsException.class, () -> function.getX(3));
+    }
+
+    @Test
+    public void testConstructorWithMinimumPoints() {
+        double[] xValues = {1.0}; // Один узел
+        double[] yValues = {2.0};
+        assertThrows(IllegalArgumentException.class, () -> {
+            new LinkedListTabulatedFunction(xValues, yValues);
+        });
     }
 
 }

@@ -13,6 +13,46 @@ public class ArrayTabulatedFunctionTest {
         }
     }
 
+    @Test
+    void testConstructorWithTooFewPoints() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            new ArrayTabulatedFunction(new double[]{1.0}, new double[]{2.0});
+        });
+    }
+
+    // Тестирование getX с некорректным индексом
+    @Test
+    void testGetXWithInvalidIndex() {
+        double[] xValues = {1.0, 2.0};
+        double[] yValues = {1.0, 4.0};
+        ArrayTabulatedFunction function = new ArrayTabulatedFunction(xValues, yValues);
+
+        assertThrows(IndexOutOfBoundsException.class, () -> function.getX(-1));
+        assertThrows(IndexOutOfBoundsException.class, () -> function.getX(2));
+    }
+
+    // Тестирование getY с некорректным индексом
+    @Test
+    void testGetYWithInvalidIndex() {
+        double[] xValues = {1.0, 2.0};
+        double[] yValues = {1.0, 4.0};
+        ArrayTabulatedFunction function = new ArrayTabulatedFunction(xValues, yValues);
+
+        assertThrows(IndexOutOfBoundsException.class, () -> function.getY(-1));
+        assertThrows(IndexOutOfBoundsException.class, () -> function.getY(2));
+    }
+
+    // Тестирование floorIndexOfX с некорректным значением x
+    @Test
+    void testFloorIndexOfXWithOutOfBoundsX() {
+        double[] xValues = {1.0, 2.0};
+        double[] yValues = {1.0, 4.0};
+        ArrayTabulatedFunction function = new ArrayTabulatedFunction(xValues, yValues);
+
+        assertThrows(IllegalArgumentException.class, () -> function.floorIndexOfX(0.0));
+        assertThrows(IllegalArgumentException.class, () -> function.floorIndexOfX(3.0));
+    }
+
     // Тестирование конструктора с MathFunction
     @Test
     void testConstructorWithMathFunction() {
@@ -35,27 +75,6 @@ public class ArrayTabulatedFunctionTest {
         assertEquals(5, function.getCount());
         assertEquals(1.0, function.getX(0));
         assertEquals(5.0, function.getX(4));
-    }
-
-    // Тестирование конструктора с одной точкой
-    @Test
-    void testConstructorWithSinglePoint() {
-        MathFunction source = new TestMathFunction();
-        ArrayTabulatedFunction function = new ArrayTabulatedFunction(source, 2.0, 2.0, 1);
-
-        assertEquals(1, function.getCount());
-        assertEquals(2.0, function.getX(0));
-        assertEquals(4.0, function.getY(0)); // y = 2 * 2
-    }
-
-    // Тестирование конструктора с count равным 1
-    @Test
-    void testConstructorWithCountOne() {
-        MathFunction source = new TestMathFunction();
-        ArrayTabulatedFunction function = new ArrayTabulatedFunction(source, 0.0, 0.0, 1);
-        assertEquals(1, function.getCount());
-        assertEquals(0.0, function.getX(0));
-        assertEquals(0.0, function.getY(0)); // y = 2 * 0
     }
 
     // Существующие тесты для вставки и других методов
