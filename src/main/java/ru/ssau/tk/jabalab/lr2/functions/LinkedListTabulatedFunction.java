@@ -1,5 +1,6 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class LinkedListTabulatedFunction extends AbstractTabulatedFunction implements Insertable, Removable {
     // Голова списка
@@ -31,7 +32,24 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
 
     @Override
     public Iterator<Point> iterator() {
-        throw new UnsupportedOperationException("Iterator is not supported.");
+        return new Iterator<Point>() {
+            private Node node = head; // Начальная ссылка на голову списка
+
+            @Override
+            public boolean hasNext() {
+                return node != null; // Проверяем, есть ли еще элементы
+            }
+
+            @Override
+            public Point next() {
+                if (!hasNext()) {
+                    throw new NoSuchElementException("No more elements in the iterator.");
+                }
+                Point point = new Point(node.x, node.y); // Создаем точку из текущего узла
+                node = (node.next != head) ? node.next : null; // Переходим к следующему элементу
+                return point; // Возвращаем текущую точку
+            }
+        };
     }
 
     // Метод для добавления нового узла в конец списка

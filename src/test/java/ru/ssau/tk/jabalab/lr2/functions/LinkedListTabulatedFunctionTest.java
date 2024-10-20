@@ -2,6 +2,9 @@ package ru.ssau.tk.jabalab.lr2.functions;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.util.Iterator;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LinkedListTabulatedFunctionTest {
@@ -364,6 +367,31 @@ public class LinkedListTabulatedFunctionTest {
         assertThrows(IllegalArgumentException.class, () -> {
             new LinkedListTabulatedFunction(xValues, yValues);
         });
+    }
+    @Test
+    public void testIteratorWhile() {
+        double[] xValues = {1.0, 2.0, 3.0};
+        double[] yValues = {1.1, 2.1, 3.1};
+
+        LinkedListTabulatedFunction function = new LinkedListTabulatedFunction(xValues, yValues);
+        Iterator<Point> iterator = function.iterator();
+
+        while (iterator.hasNext()) {
+            Point point = iterator.next();
+            assertNotNull(point);
+        }
+    }
+
+    @Test
+    public void testIteratorForEach() {
+        double[] xValues = {4.0, 5.0, 6.0};
+        double[] yValues = {4.1, 5.1, 6.1};
+
+        LinkedListTabulatedFunction function = new LinkedListTabulatedFunction(xValues, yValues);
+
+        for (Point point : function) {
+            assertNotNull(point);
+        }
     }
 
 }
