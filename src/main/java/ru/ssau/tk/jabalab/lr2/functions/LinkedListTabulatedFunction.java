@@ -6,16 +6,12 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
     // Количество узлов в списке
     private int count;
 
-    public Node getHead() {
-        return head; // Предполагая, что head - это поле в вашем классе
-    }
-
     public LinkedListTabulatedFunction() {
         head = null;
         count = 0;
     }
 
-    // Вспомогательный класс для представления узла списка
+    // Статический вложенный класс для представления узла списка
     private static class Node {
         public Node next; // Ссылка на следующий узел
         public Node prev; // Ссылка на предыдущий узел
@@ -26,6 +22,10 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
             this.x = x;
             this.y = y;
         }
+    }
+
+    public Node getHead() {
+        return head; //     head - это поле в нашем классе
     }
 
     // Метод для добавления нового узла в конец списка
@@ -188,6 +188,7 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
         Node ceilingNode = floorIndex + 1 < count ? getNode(floorIndex + 1) : floorNode; // Узел с наименьшим x
         return interpolate(x, floorNode.x, ceilingNode.x, floorNode.y, ceilingNode.y); // Интерполяция между узлами
     }
+
     @Override
     public void remove(int index) {
         if (index < 0 || index >= count) {
@@ -225,7 +226,6 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
         head = newNode;
         count++;
     }
-
 
     @Override
     public void insert(double x, double y) {
