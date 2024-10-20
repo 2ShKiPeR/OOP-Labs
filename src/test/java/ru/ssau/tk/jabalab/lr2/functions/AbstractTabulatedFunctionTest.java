@@ -5,7 +5,7 @@ import exceptions.DifferentLengthOfArraysException;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class AbstractTabulateFunctionTest {
+public class AbstractTabulatedFunctionTest {
 
     @Test
     void checkLengthIsTheSameTest1() {
