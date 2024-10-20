@@ -1,4 +1,5 @@
 package ru.ssau.tk.jabalab.lr2.functions;
+import java.util.Iterator;
 
 public class LinkedListTabulatedFunction extends AbstractTabulatedFunction implements Insertable, Removable {
     // Голова списка
@@ -26,6 +27,11 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
 
     public Node getHead() {
         return head; //     head - это поле в нашем классе
+    }
+
+    @Override
+    public Iterator<Point> iterator() {
+        throw new UnsupportedOperationException("Iterator is not supported.");
     }
 
     // Метод для добавления нового узла в конец списка
@@ -77,6 +83,8 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
             addNode(x, y); // Добавляем узел в список
         }
     }
+
+
 
     @Override
     public int getCount() {

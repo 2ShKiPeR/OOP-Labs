@@ -3,6 +3,7 @@ package ru.ssau.tk.jabalab.lr2.functions;
 import java.util.Arrays;
 import java.util.function.Function;
 import java.util.NoSuchElementException;
+import java.util.Iterator;
 
 public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements Insertable {
     protected double[] arrX;
@@ -38,7 +39,10 @@ public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements
         for (int i = 0; i < count; i++)
             arrY[i] = source.apply(arrX[i]);
     }
-
+    @Override
+    public Iterator<Point> iterator() {
+        throw new UnsupportedOperationException("Iterator is not supported.");
+    }
     @Override
     public void insert(double x, double y) {
         int index = indexOfX(x);

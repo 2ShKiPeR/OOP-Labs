@@ -1,6 +1,8 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 
-public interface TabulatedFunction extends MathFunction {
+import java.util.Iterator;
+
+public interface TabulatedFunction extends MathFunction, Iterable<Point> {
     int getCount();
     double getX(int index);
     double getY(int index);
@@ -9,4 +11,7 @@ public interface TabulatedFunction extends MathFunction {
     int indexOfY(double y);
     double leftBound();
     double rightBound();
+
+    @Override
+    Iterator<Point> iterator();
 }
