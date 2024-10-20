@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;koshirox&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/2ShKiPeR/OOP-Labs.git&quot;,
+    &quot;accountId&quot;: &quot;d26dfd36-12f8-4c16-800d-03fd1b28aed0&quot;
+  }
+}</component>
+  <component name="NamedScopeManager">
+    <scope name="Kostya Simonov" pattern="" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2mWiAoK6uwQ4WbWscW999KLN1jy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ArrayTabulatedFunctionTest.executor": "Coverage",
+    "JUnit.ChaplyginFunctionTest.executor": "Run",
+    "JUnit.ChaplyginFunctionTest.testSingleValue.executor": "Run",
+    "JUnit.ChaplyginMethodFunctionTest.executor": "Run",
+    "JUnit.ChaplyginMethodTest.executor": "Run",
+    "JUnit.ChaplyginMethodTest.testApplyEdgeCases.executor": "Run",
+    "JUnit.CompositeFunctionTest.executor": "Coverage",
+    "JUnit.CompositeFunctionTest.testCompositeFunction.executor": "Debug",
+    "JUnit.ConstantFunctionTest.executor": "Coverage",
+    "JUnit.IdentityFunctionTest.executor": "Run",
+    "JUnit.LinkedListTabulatedFunctionTest.executor": "Run",
+    "JUnit.LinkedListTabulatedFunctionTest.testInterpolate.executor": "Debug",
+    "JUnit.LinkedListTabulatedFunctionTest.testSetYOutOfBounds.executor": "Run",
+    "JUnit.UnitFunctionTest.executor": "Coverage",
+    "JUnit.ZeroFunctionTest.executor": "Run",
+    "JUnit.java in OOP-Labs.executor": "Run",
+    "Maven.Unknown [clean].executor": "Run",
+    "Maven.Unknown [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "dev__X",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Ученик/OOP-Labs",
+    "onboarding.tips.debug.path": "D:/Ученик/OOP-Labs/src/main/java/ru/ssau/tk/_NAME_/_PROJECT_/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "copyright"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.ssau.tk.jabalab.lr2.functions" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.ssau.tk.jabalab.lr2.functions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.java in OOP-Labs">
+    <configuration name="ChaplyginFunctionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP-Labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.functions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.functions" />
+      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.functions.ChaplyginFunctionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChaplyginFunctionTest.testSingleValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP-Labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.functions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.functions" />
+      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.functions.ChaplyginFunctionTest" />
+      <option name="METHOD_NAME" value="testSingleValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedListTabulatedFunctionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP-Labs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.functions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.functions" />
+      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.functions.LinkedListTabulatedFunctionTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in OOP-Labs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP-Labs" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.java in OOP-Labs" />
+      <item itemvalue="JUnit.ChaplyginFunctionTest" />
+      <item itemvalue="JUnit.ChaplyginFunctionTest.testSingleValue" />
+      <item itemvalue="JUnit.LinkedListTabulatedFunctionTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.java in OOP-Labs" />
+        <item itemvalue="JUnit.ChaplyginFunctionTest" />
+        <item itemvalue="JUnit.ChaplyginFunctionTest.testSingleValue" />
+        <item itemvalue="JUnit.LinkedListTabulatedFunctionTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="" />
+      <created>1727198592832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727198592832</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/OOP_Labs$UnitFunctionTest.ic" NAME="UnitFunctionTest Coverage Results" MODIFIED="1728420617802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1729438042121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodTest.ic" NAME="ChaplyginMethodTest Coverage Results" MODIFIED="1728117566872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$LinkedListTabulatedFunctionTest.ic" NAME="LinkedListTabulatedFunctionTest Coverage Results" MODIFIED="1728507794467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodFunctionTest.ic" NAME="ChaplyginMethodFunctionTest Coverage Results" MODIFIED="1728552132925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$ArrayTabulatedFunctionTest.ic" NAME="ArrayTabulatedFunctionTest Coverage Results" MODIFIED="1728570192159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$CompositeFunctionTest.ic" NAME="CompositeFunctionTest Coverage Results" MODIFIED="1728502998838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$ConstantFunctionTest.ic" NAME="ConstantFunctionTest Coverage Results" MODIFIED="1728420732645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginFunctionTest.ic" NAME="ChaplyginFunctionTest Coverage Results" MODIFIED="1728166336376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+  </component>
+</project>

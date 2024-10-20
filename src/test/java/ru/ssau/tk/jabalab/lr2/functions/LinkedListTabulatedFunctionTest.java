@@ -241,6 +241,7 @@ public class LinkedListTabulatedFunctionTest {
         assertThrows(IndexOutOfBoundsException.class, () -> function.remove(3)); // Неверный индекс (больше, чем размер)
     }
 
+
     // Новые тесты для конструктора из MathFunction
     private static class TestMathFunction implements MathFunction {
         @Override
@@ -302,5 +303,79 @@ public class LinkedListTabulatedFunctionTest {
         assertEquals(4.0, functionFromSource.getY(1)); // y = 2 * 2
         assertEquals(6.0, functionFromSource.getY(2)); // y = 2 * 3
     }
+    // Тестирование метода insert, когда список пустой
+    @Test
+    public void testInsertIntoEmptyList() {
+        function.remove(0); // Удаляем все элементы, чтобы оставить список пустым
+        function.insert(1.0, 1.0); // Вставляем значение в пустой список
+        assertEquals(3, function.getCount());
+        assertEquals(1.0, function.getX(0));
+        assertEquals(1.0, function.getY(0));
+    }
+
+    // Тестирование вставки перед головой
+    @Test
+    public void testInsertBeforeHead() {
+        function.insert(0.5, 1.5); // Вставить перед текущей головой (1.0)
+        assertEquals(4, function.getCount());
+        assertEquals(0.5, function.getX(0)); // Теперь голова должна быть 0.5
+    }
+
+    // Тестирование вставки с одинаковым значением X
+    @Test
+    public void testInsertWithEqualX() {
+        function.insert(2.0, 5.0); // Заменяем y для уже существующего x (2.0)
+        assertEquals(3, function.getCount()); // Количество должно остаться прежним
+        assertEquals(5.0, function.getY(1)); // Значение y для x=2.0 должно быть обновлено
+    }
+
+    // Тестирование вставки в конец списка
+    @Test
+    public void testInsertAtEnd() {
+        function.insert(4.0, 8.0); // Добавляем значение в конец списка
+        assertEquals(4, function.getCount());
+        assertEquals(4.0, function.getX(3)); // Новое значение должно быть в конце
+    }
+
+    // Тестирование вставки между существующими узлами
+    @Test
+    public void testInsertBetweenNodes() {
+        function.insert(1.5, 3.0); // Вставляем между 1.0 и 2.0
+        assertEquals(4, function.getCount());
+        assertEquals(1.5, function.getX(1)); // Проверяем, что 1.5 теперь на 1 позиции
+    }
+
+    // Тестирование вставки значения перед узлом с меньшим x
+    @Test
+    public void testInsertWithSmallerX() {
+        function.insert(0.0, 0.0); // Вставляем значение меньше всех существующих
+        assertEquals(4, function.getCount());
+        assertEquals(0.0, function.getX(0)); // Проверяем, что 0.0 теперь в начале
+    }
+
+    // Тестирование вставки значения больше всех
+    @Test
+    public void testInsertWithGreaterX() {
+        function.insert(5.0, 10.0); // Вставляем значение больше всех существующих
+        assertEquals(4, function.getCount());
+        assertEquals(5.0, function.getX(3)); // Проверяем, что новое значение добавлено в конец
+    }
+
+    // Тестирование вставки между узлами со значениями
+    @Test
+    public void testInsertBetweenExistingNodes() {
+        function.insert(2.5, 5.0); // Вставка между 2.0 и 3.0
+        assertEquals(3, function.getCount());
+        assertEquals(3.0, function.getX(2)); // Проверяем, что 2.5 теперь на 2 позиции
+    }
+
+    // Тестирование вставки с использованием существующего узла
+    @Test
+    public void testInsertWithExistingX() {
+        function.insert(1.0, 10.0); // Заменяем y для x (1.0)
+        assertEquals(3, function.getCount()); // Количество должно остаться прежним
+        assertEquals(10.0, function.getY(0)); // Проверяем, что y обновилось
+    }
+
 }
 

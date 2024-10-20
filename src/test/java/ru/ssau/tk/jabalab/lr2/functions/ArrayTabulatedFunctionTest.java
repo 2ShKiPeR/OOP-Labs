@@ -1,11 +1,64 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ArrayTabulatedFunctionTest {
 
+    // Внутренний класс для тестирования MathFunction
+    private static class TestMathFunction implements MathFunction {
+        @Override
+        public double apply(double x) {
+            return 2 * x; // Простая линия y = 2x
+        }
+    }
+
+    // Тестирование конструктора с MathFunction
+    @Test
+    void testConstructorWithMathFunction() {
+        MathFunction source = new TestMathFunction();
+        ArrayTabulatedFunction function = new ArrayTabulatedFunction(source, 1.0, 5.0, 5);
+
+        assertEquals(5, function.getCount());
+        assertEquals(1.0, function.getX(0));
+        assertEquals(5.0, function.getX(4));
+        assertEquals(2.0, function.getY(0)); // y = 2 * 1
+        assertEquals(10.0, function.getY(4)); // y = 2 * 5
+    }
+
+    // Тестирование конструктора с перевернутыми границами
+    @Test
+    void testConstructorWithReversedRange() {
+        MathFunction source = new TestMathFunction();
+        ArrayTabulatedFunction function = new ArrayTabulatedFunction(source, 5.0, 1.0, 5);
+
+        assertEquals(5, function.getCount());
+        assertEquals(1.0, function.getX(0));
+        assertEquals(5.0, function.getX(4));
+    }
+
+    // Тестирование конструктора с одной точкой
+    @Test
+    void testConstructorWithSinglePoint() {
+        MathFunction source = new TestMathFunction();
+        ArrayTabulatedFunction function = new ArrayTabulatedFunction(source, 2.0, 2.0, 1);
+
+        assertEquals(1, function.getCount());
+        assertEquals(2.0, function.getX(0));
+        assertEquals(4.0, function.getY(0)); // y = 2 * 2
+    }
+
+    // Тестирование конструктора с count равным 1
+    @Test
+    void testConstructorWithCountOne() {
+        MathFunction source = new TestMathFunction();
+        ArrayTabulatedFunction function = new ArrayTabulatedFunction(source, 0.0, 0.0, 1);
+        assertEquals(1, function.getCount());
+        assertEquals(0.0, function.getX(0));
+        assertEquals(0.0, function.getY(0)); // y = 2 * 0
+    }
+
+    // Существующие тесты для вставки и других методов
     @Test
     void testInsert() {
         double[] xValues = {1.0, 2.0, 3.0};
@@ -100,7 +153,7 @@ public class ArrayTabulatedFunctionTest {
         double[] arrX = {1, 2, 3, 4, 5};
         double[] arrY = {1, 2, 3, 4, 5};
         ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
-        assertEquals(arrY[0] + (arrY[1] - arrY[0]) / (arrX[1] - arrX[0]) * (-1 - arrX[0]),func.apply(-1) );
+        assertEquals(arrY[0] + (arrY[1] - arrY[0]) / (arrX[1] - arrX[0]) * (-1 - arrX[0]), func.apply(-1));
     }
 
     @Test
@@ -117,6 +170,21 @@ public class ArrayTabulatedFunctionTest {
         double[] arrY = {1, 2, 3, 4, 5};
         ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
         int floorIndex = func.floorIndexOfX(4.5);
-        assertEquals( arrY[floorIndex] + (arrY[floorIndex + 1] - arrY[floorIndex]) / (arrX[floorIndex + 1] - arrX[floorIndex]) * (4.5 - arrX[floorIndex]), func.apply(4.5));
+        assertEquals(arrY[floorIndex] + (arrY[floorIndex + 1] - arrY[floorIndex]) / (arrX[floorIndex + 1] - arrX[floorIndex]) * (4.5 - arrX[floorIndex]), func.apply(4.5));
+    }
+    @Test
+    void indexOfYTest() {
+        double[] arrX = {1, 2, 3, 4, 5};
+        double[] arrY = {1, 2, 3, 4, 5};
+        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
+
+        // Тестирование существующих значений
+        assertEquals(0, func.indexOfY(1)); // индекс Y = 1
+        assertEquals(2, func.indexOfY(3)); // индекс Y = 3
+        assertEquals(4, func.indexOfY(5)); // индекс Y = 5
+
+        // Тестирование отсутствующих значений
+        assertEquals(-1, func.indexOfY(6)); // Y = 6 не существует
+        assertEquals(-1, func.indexOfY(-1)); // Y = -1 не существует
     }
 }
