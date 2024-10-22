@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest$TestMathFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest$TestMathFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/AbstractTabulatedFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/AbstractTabulatedFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/Point.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +74,7 @@
     "JUnit.LinkedListTabulatedFunctionTest.testSetYOutOfBounds.executor": "Run",
     "JUnit.UnitFunctionTest.executor": "Coverage",
     "JUnit.ZeroFunctionTest.executor": "Run",
-    "JUnit.java in OOP-Labs.executor": "Coverage",
+    "JUnit.java in OOP-Labs.executor": "Run",
     "Maven.Unknown [clean].executor": "Run",
     "Maven.Unknown [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
