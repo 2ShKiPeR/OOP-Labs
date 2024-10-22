@@ -21,18 +21,4 @@ public abstract class AbstractTabulatedFunction implements TabulatedFunction {
         else if (indexOfX(x) == -1) return interpolate(x, floorIndexOfX(x));
         return getY(indexOfX(x));
     }
-
-    @Override
-    public String toString()
-    {
-        final StringBuilder sb = new StringBuilder();
-        sb.append(this.getClass().getSimpleName());
-        sb.append(" size = ");
-        sb.append(getCount());
-        for (Point point : this) {
-            sb.append("[").append(point.x).append("; ").append(point.y).append("]\n");
-        }
-        return sb.toString();
-
-    }
 }
