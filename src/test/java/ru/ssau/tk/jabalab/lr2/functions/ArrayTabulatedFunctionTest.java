@@ -1,7 +1,10 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 
+import exceptions.InterpolationException;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.util.Iterator;
+import java.util.Objects;
 
 public class ArrayTabulatedFunctionTest {
 
@@ -187,10 +190,12 @@ public class ArrayTabulatedFunctionTest {
     void interpolateTest() {
         double[] arrX = {1, 2, 3, 4, 5};
         double[] arrY = {1, 2, 3, 4, 5};
-        ArrayTabulatedFunction func = new ArrayTabulatedFunction(arrX, arrY);
-        int floorIndex = func.floorIndexOfX(4.5);
-        assertEquals(arrY[floorIndex] + (arrY[floorIndex + 1] - arrY[floorIndex]) / (arrX[floorIndex + 1] - arrX[floorIndex]) * (4.5 - arrX[floorIndex]), func.apply(4.5));
+        ArrayTabulatedFunction list = new ArrayTabulatedFunction(arrX, arrY);
+        int floorIndex = list.floorIndexOfX(4.5);
+        assertThrows(InterpolationException.class, () -> list.interpolate(1.5, 1));
+        assertDoesNotThrow(() -> list.interpolate(1.5, 0));
     }
+
     @Test
     void indexOfYTest() {
         double[] arrX = {1, 2, 3, 4, 5};
@@ -205,5 +210,27 @@ public class ArrayTabulatedFunctionTest {
         // Тестирование отсутствующих значений
         assertEquals(-1, func.indexOfY(6)); // Y = 6 не существует
         assertEquals(-1, func.indexOfY(-1)); // Y = -1 не существует
+    }
+
+    @Test
+    void iteratorTest1(){
+        ArrayTabulatedFunction arr = new ArrayTabulatedFunction(new double[]{1, 2, 3}, new double[]{1, 2, 3});
+        Iterator<Point> iterator = arr.iterator();
+        int j = 0;
+        while(iterator.hasNext()){
+            Point point = iterator.next();
+            assertEquals(point.x, arr.getX(j));
+            assertEquals(point.y, arr.getY(j++));
+        }
+    }
+
+    @Test
+    void iteratorTest2(){
+        ArrayTabulatedFunction arr = new ArrayTabulatedFunction(new double[]{1, 2, 3}, new double[]{1, 2, 3});
+        int j = 0;
+        for (Point point : arr) {
+            assertEquals(point.x, arr.getX(j));
+            assertEquals(point.y, arr.getY(j++));
+        }
     }
 }

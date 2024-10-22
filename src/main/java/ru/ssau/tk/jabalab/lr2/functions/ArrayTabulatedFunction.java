@@ -1,5 +1,7 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 
+import exceptions.InterpolationException;
+
 import java.util.Arrays;
 import java.util.function.Function;
 import java.util.NoSuchElementException;
@@ -9,11 +11,13 @@ public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements
     protected double[] arrX;
     protected double[] arrY;
     protected int count;
-    private static final int INITIAL_CAPACITY = 10; // Начальный размер массива
+    private static final int INITIAL_CAPACITY = 2; // Начальный размер массива
     private static final double EXPANSION_FACTOR = 1.5; // Коэффициент расширения массива
 
     public ArrayTabulatedFunction(double[] xValues, double[] yValues) {
+        checkLengthIsTheSame(xValues, yValues);
         if (xValues.length <= 1) throw new IllegalArgumentException("Length of xValues must be greater than 1");
+        checkSorted(xValues);
         count = xValues.length;
         arrX = new double[Math.max(INITIAL_CAPACITY, xValues.length)];
         arrY = new double[arrX.length];
@@ -41,8 +45,24 @@ public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements
     }
     @Override
     public Iterator<Point> iterator() {
-        throw new UnsupportedOperationException("Iterator is not supported.");
+        return new Iterator<>() {
+            private int i = 0;
+
+            @Override
+            public boolean hasNext() {
+                return i < count;
+            }
+
+            @Override
+            public Point next() {
+                if (!hasNext()) throw new NoSuchElementException();
+                Point point = new Point(arrX[i], arrY[i]);
+                i++;
+                return point;
+            }
+        };
     }
+
     @Override
     public void insert(double x, double y) {
         int index = indexOfX(x);
@@ -148,6 +168,8 @@ public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements
 
     @Override
     protected double interpolate(double x, int floorIndex) {
+        if (x < arrX[floorIndex] || x > arrX[floorIndex + 1])
+            throw new InterpolationException("x is out of bounds");
         return interpolate(x, arrX[floorIndex], arrX[floorIndex + 1], arrY[floorIndex], arrY[floorIndex + 1]);
     }
 }

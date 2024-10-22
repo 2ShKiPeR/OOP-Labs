@@ -2,7 +2,9 @@ package ru.ssau.tk.jabalab.lr2.functions;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+import exceptions.ArrayIsNotSortedException;
+import exceptions.DifferentLengthOfArraysException;
+import exceptions.InterpolationException;
 import java.util.Iterator;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -33,7 +35,7 @@ public class LinkedListTabulatedFunctionTest {
         double[] xValues = {1.0, 2.0};
         double[] yValues = {2.0};
         // Проверка, что выбрасывается исключение IllegalArgumentException
-        assertThrows(IllegalArgumentException.class, () -> {
+        assertThrows(DifferentLengthOfArraysException.class, () -> {
             new LinkedListTabulatedFunction(xValues, yValues);
         });
     }
@@ -171,17 +173,10 @@ public class LinkedListTabulatedFunctionTest {
 
     // Тестирование метода interpolate с использованием floorNode
     @Test
-    public void testInterpolateOnlyWithFloorNode() {
-        // Инициализация с несколькими узлами
-        double[] xValues = {1.0, 2.0, 3.0}; // Три узла
-        double[] yValues = {2.0, 4.0, 6.0}; // Соответствующие Y значения
-        function = new LinkedListTabulatedFunction(xValues, yValues);
-
-        // Переполнение индекса, должно использоваться floorNode
-        double result = function.interpolate(3.5, 2); // floorIndex равен 2 (последний узел)
-
-        // Проверка результата. Должно быть 6.0, так как узел ceilingNode не существует.
-        assertEquals(6.0, result, 0.001);
+    void interpolateFloorTest(){
+        LinkedListTabulatedFunction list = new LinkedListTabulatedFunction(new double[]{1, 2, 3}, new double[]{1, 2, 3});
+        assertThrows(InterpolationException.class, () -> list.interpolate(1.5, 1));
+        assertDoesNotThrow(() -> list.interpolate(1.5, 0));
     }
 
     // Тестирование метода получения узла из конца списка
