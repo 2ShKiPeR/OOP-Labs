@@ -20,11 +20,11 @@ public class TabulatedFunctionOperationServiceTest {
         Point[] points = TabulatedFunctionOperationService.asPoints(function);
 
         assertEquals(3, points.length); // Убедитесь, что длина массива равна количеству точек
-        assertEquals(1.0, points[0].getX());
-        assertEquals(2.0, points[0].getY());
-        assertEquals(2.0, points[1].getX());
-        assertEquals(4.0, points[1].getY());
-        assertEquals(3.0, points[2].getX());
-        assertEquals(6.0, points[2].getY());
+        assertEquals(1.0, points[0].x);
+        assertEquals(2.0, points[0].y);
+        assertEquals(2.0, points[1].x);
+        assertEquals(4.0, points[1].y);
+        assertEquals(3.0, points[2].x);
+        assertEquals(6.0, points[2].y);
     }
 }

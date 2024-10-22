@@ -35,12 +35,12 @@ public class TabulatedDifferentialOperator implements DifferentialOperator<Tabul
 
         // Заполнение массивов x и y
         for (int i = 0; i < points.length; i++) {
-            xValues[i] = points[i].getX();
+            xValues[i] = points[i].x;
         }
 
         // Вычисляем значения y с использованием правой и левой производной
         for (int k = 0; k < points.length - 1; k++) {
-            yValues[k] = (points[k + 1].getY() - points[k].getY()) / (points[k + 1].getX() - points[k].getX());
+            yValues[k] = (points[k + 1].y - points[k].y) / (points[k + 1].x - points[k].x);
         }
         // Последнее значение - берем из предпоследнего
         yValues[points.length - 1] = yValues[points.length - 2];
