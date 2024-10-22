@@ -1,9 +1,8 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 
-import exceptions.InterpolationException;
+import ru.ssau.tk.jabalab.lr2.exceptions.InterpolationException;
 
 import java.util.Arrays;
-import java.util.function.Function;
 import java.util.NoSuchElementException;
 import java.util.Iterator;
 

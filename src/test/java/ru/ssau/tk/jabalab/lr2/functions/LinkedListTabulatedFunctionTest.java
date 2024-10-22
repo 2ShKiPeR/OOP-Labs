@@ -2,9 +2,8 @@ package ru.ssau.tk.jabalab.lr2.functions;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import exceptions.ArrayIsNotSortedException;
-import exceptions.DifferentLengthOfArraysException;
-import exceptions.InterpolationException;
+import ru.ssau.tk.jabalab.lr2.exceptions.DifferentLengthOfArraysException;
+import ru.ssau.tk.jabalab.lr2.exceptions.InterpolationException;
 import java.util.Iterator;
 
 import static org.junit.jupiter.api.Assertions.*;

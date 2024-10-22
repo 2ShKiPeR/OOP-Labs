@@ -1,10 +1,9 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 
-import exceptions.InterpolationException;
+import ru.ssau.tk.jabalab.lr2.exceptions.InterpolationException;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.Iterator;
-import java.util.Objects;
 
 public class ArrayTabulatedFunctionTest {
 

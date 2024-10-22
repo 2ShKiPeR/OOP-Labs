@@ -1,6 +1,6 @@
 package ru.ssau.tk.jabalab.lr2.operations;
 
-import exceptions.InconsistentFunctionsException;
+import ru.ssau.tk.jabalab.lr2.exceptions.InconsistentFunctionsException;
 import ru.ssau.tk.jabalab.lr2.functions.TabulatedFunction;
 import ru.ssau.tk.jabalab.lr2.functions.Point;
 import ru.ssau.tk.jabalab.lr2.functions.factory.ArrayTabulatedFunctionFactory;

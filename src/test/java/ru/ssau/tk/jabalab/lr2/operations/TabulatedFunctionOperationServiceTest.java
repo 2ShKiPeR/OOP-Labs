@@ -8,7 +8,7 @@ import ru.ssau.tk.jabalab.lr2.functions.TabulatedFunction;
 import ru.ssau.tk.jabalab.lr2.functions.factory.ArrayTabulatedFunctionFactory;
 import ru.ssau.tk.jabalab.lr2.functions.factory.TabulatedFunctionFactory;
 import ru.ssau.tk.jabalab.lr2.functions.factory.LinkedListTabulatedFunctionFactory;
-import exceptions.InconsistentFunctionsException;
+import ru.ssau.tk.jabalab.lr2.exceptions.InconsistentFunctionsException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
