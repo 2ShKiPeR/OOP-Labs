@@ -1,10 +1,14 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 import ru.ssau.tk.jabalab.lr2.exceptions.InterpolationException;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class LinkedListTabulatedFunction extends AbstractTabulatedFunction implements Insertable, Removable {
+public class LinkedListTabulatedFunction extends AbstractTabulatedFunction implements Insertable, Removable, Serializable {
+    @Serial
+    private final static long serialVersionUID = -6010119437446210523L;
     // Голова списка
     private Node head;
     // Количество узлов в списке
@@ -16,7 +20,9 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
     }
 
     // Статический вложенный класс для представления узла списка
-    private static class Node {
+    private static class Node implements Serializable {
+        @Serial
+        private final static long serialVersionUID = 478404940886376832L;
         public Node next; // Ссылка на следующий узел
         public Node prev; // Ссылка на предыдущий узел
         public double x;  // Значение x

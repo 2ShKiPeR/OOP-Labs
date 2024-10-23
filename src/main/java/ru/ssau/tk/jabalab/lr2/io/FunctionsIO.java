@@ -39,4 +39,38 @@ public final class FunctionsIO {
         }
         return factory.create(xValues, yValues);
     }
+    public static void writeTabulatedFunction(BufferedOutputStream outputStream, TabulatedFunction function) throws IOException {
+        final DataOutputStream outputdata = new DataOutputStream(outputStream);
+
+        outputdata.writeInt(function.getCount());
+        for (Point p : function) {
+            outputdata.writeDouble(p.x);
+            outputdata.writeDouble(p.y);
+        }
+
+        outputdata.flush();
+    }
+    static TabulatedFunction readTabulatedFunction(BufferedInputStream inputStream, TabulatedFunctionFactory factory) throws IOException {
+        DataInputStream dataInputStream = new DataInputStream(inputStream);
+        int count = dataInputStream.readInt();
+        double[] xValues = new double[count];
+        double[] yValues = new double[count];
+
+        for (int i = 0; i < count; i++) {
+            xValues[i] = dataInputStream.readDouble();
+            yValues[i] = dataInputStream.readDouble();
+        }
+
+        return factory.create(xValues, yValues);
+    }
+    static void serialize(BufferedOutputStream stream, TabulatedFunction function) throws IOException {
+        ObjectOutputStream out = new ObjectOutputStream(stream);
+        out.writeObject(function);
+        out.flush();
+    }
+
+    static TabulatedFunction deserialize(BufferedInputStream stream) throws IOException, ClassNotFoundException {
+        var inp = new ObjectInputStream(stream);
+        return (TabulatedFunction) inp.readObject();
+    }
 }
