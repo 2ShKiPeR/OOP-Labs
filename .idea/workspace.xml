@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="added input/output">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/TabulatedFunctionFileWriter.java" afterDir="false" />
+    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="added TabulatedFunctionFileWriter">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/TabulatedFunctionFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/FunctionsIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/FunctionsIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/TabulatedFunctionFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/TabulatedFunctionFileWriter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729702623037</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added TabulatedFunctionFileWriter">
+      <option name="closed" value="true" />
+      <created>1729704363870</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729704363870</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +267,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task2" />
     <MESSAGE value="added input/output" />
-    <option name="LAST_COMMIT_MESSAGE" value="added input/output" />
+    <MESSAGE value="added TabulatedFunctionFileWriter" />
+    <option name="LAST_COMMIT_MESSAGE" value="added TabulatedFunctionFileWriter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
