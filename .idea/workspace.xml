@@ -21,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/dev_Y" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -55,40 +58,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ArrayTabulatedFunctionTest.executor": "Coverage",
-    "JUnit.ChaplyginFunctionTest.executor": "Run",
-    "JUnit.ChaplyginFunctionTest.testSingleValue.executor": "Run",
-    "JUnit.ChaplyginMethodFunctionTest.executor": "Run",
-    "JUnit.ChaplyginMethodTest.executor": "Run",
-    "JUnit.ChaplyginMethodTest.testApplyEdgeCases.executor": "Run",
-    "JUnit.CompositeFunctionTest.executor": "Coverage",
-    "JUnit.CompositeFunctionTest.testCompositeFunction.executor": "Debug",
-    "JUnit.ConstantFunctionTest.executor": "Coverage",
-    "JUnit.IdentityFunctionTest.executor": "Run",
-    "JUnit.LinkedListTabulatedFunctionTest.executor": "Run",
-    "JUnit.LinkedListTabulatedFunctionTest.testInterpolate.executor": "Debug",
-    "JUnit.LinkedListTabulatedFunctionTest.testSetYOutOfBounds.executor": "Run",
-    "JUnit.UnitFunctionTest.executor": "Coverage",
-    "JUnit.ZeroFunctionTest.executor": "Run",
-    "JUnit.java in OOP-Labs.executor": "Run",
-    "Maven.Unknown [clean].executor": "Run",
-    "Maven.Unknown [test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "dev__X",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Ученик/OOP-Labs",
-    "onboarding.tips.debug.path": "D:/Ученик/OOP-Labs/src/main/java/ru/ssau/tk/_NAME_/_PROJECT_/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "copyright"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ArrayTabulatedFunctionTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ChaplyginFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ChaplyginFunctionTest.testSingleValue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ChaplyginMethodFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ChaplyginMethodTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ChaplyginMethodTest.testApplyEdgeCases.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CompositeFunctionTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.CompositeFunctionTest.testCompositeFunction.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ConstantFunctionTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.IdentityFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTabulatedFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTabulatedFunctionTest.testInterpolate.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.LinkedListTabulatedFunctionTest.testSetYOutOfBounds.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UnitFunctionTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ZeroFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in OOP-Labs.executor&quot;: &quot;Coverage&quot;,
+    &quot;Maven.Unknown [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unknown [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev__X&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Ученик/OOP-Labs&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Ученик/OOP-Labs/src/main/java/ru/ssau/tk/_NAME_/_PROJECT_/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -157,10 +160,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.java in OOP-Labs" />
       <item itemvalue="JUnit.ChaplyginFunctionTest" />
       <item itemvalue="JUnit.ChaplyginFunctionTest.testSingleValue" />
       <item itemvalue="JUnit.LinkedListTabulatedFunctionTest" />
+      <item itemvalue="JUnit.java in OOP-Labs" />
     </list>
     <recent_temporary>
       <list>
@@ -208,7 +211,7 @@
     <SUITE FILE_PATH="coverage/OOP_Labs$UnitFunctionTest.ic" NAME="UnitFunctionTest Coverage Results" MODIFIED="1728420617802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1729448911190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1729702823936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodTest.ic" NAME="ChaplyginMethodTest Coverage Results" MODIFIED="1728117566872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
