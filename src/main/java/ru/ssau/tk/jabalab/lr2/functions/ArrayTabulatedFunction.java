@@ -5,8 +5,13 @@ import ru.ssau.tk.jabalab.lr2.exceptions.InterpolationException;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.Iterator;
+import java.io.Serializable;
+import java.io.Serial;
 
-public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements Insertable {
+public class ArrayTabulatedFunction extends AbstractTabulatedFunction implements Insertable, Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
     protected double[] arrX;
     protected double[] arrY;
     protected int count;
