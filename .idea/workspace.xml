@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InconsistentFunctionsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/FunctionsIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/operations/LeftSteppingDifferentialOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/operations/MiddleSteppingDifferentialOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/operations/RightSteppingDifferentialOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/operations/SteppingDifferentialOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/operations/DifferentialOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/operations/DifferentialOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/operations/TabulatedFunctionOperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/operations/TabulatedFunctionOperationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/operations/TabulatedFunctionOperationServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/operations/TabulatedFunctionOperationServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest$TestMathFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest$TestMathFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest$TestMathFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest$TestMathFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.class" afterDir="false" />
+    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="task2">
+      <change afterPath="$PROJECT_DIR$/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +60,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.All in jabalab.lr2.executor": "Run",
+    "JUnit.All in jabalab.lr2.executor": "Coverage",
     "JUnit.ArrayTabulatedFunctionTest.executor": "Run",
     "JUnit.ArrayTabulatedFunctionTest.interpolateTest.executor": "Run",
     "JUnit.ChaplyginFunctionTest.executor": "Run",
@@ -235,6 +216,23 @@
       <option name="presentableId" value="Default" />
       <updated>1727198592832</updated>
     </task>
+    <task id="LOCAL-00001" summary="task2">
+      <option name="closed" value="true" />
+      <created>1729633898751</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729633898751</updated>
+    </task>
+    <task id="LOCAL-00002" summary="task2">
+      <option name="closed" value="true" />
+      <created>1729634020622</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729634020622</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,6 +245,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="task2" />
+    <option name="LAST_COMMIT_MESSAGE" value="task2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -292,6 +294,7 @@
     <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodFunctionTest.ic" NAME="ChaplyginMethodFunctionTest Coverage Results" MODIFIED="1728552132925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/LR2$All_in_jabalab_lr2.ic" NAME="All in jabalab.lr2 Coverage Results" MODIFIED="1729633984949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP_Labs$LinkedListTabulatedFunctionTest.ic" NAME="LinkedListTabulatedFunctionTest Coverage Results" MODIFIED="1728507794467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
