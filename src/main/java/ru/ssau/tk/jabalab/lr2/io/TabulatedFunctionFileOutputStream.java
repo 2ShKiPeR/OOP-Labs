@@ -8,7 +8,7 @@ public class TabulatedFunctionFileOutputStream {
     public static void main(String[] args) {
         try (
                 BufferedOutputStream outputStream1 = new BufferedOutputStream(new FileOutputStream("output/array_function.bin"));
-                BufferedOutputStream outputStream2 = new BufferedOutputStream(new FileOutputStream("output/linked_list_function.bin"))
+                BufferedOutputStream outputStream2 = new BufferedOutputStream(new FileOutputStream("output/binary function.bin"))
         ) {
             ArrayTabulatedFunction function1 = new ArrayTabulatedFunction(new double[]{1, 2, 3, 4, 5}, new double[]{1, 2, 3, 4, 5});
             LinkedListTabulatedFunction function2 = new LinkedListTabulatedFunction(new double[]{1, 2, 3, 4, 5}, new double[]{1, 2, 3, 4, 5});

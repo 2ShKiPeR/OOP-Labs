@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="added input/output">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/TabulatedFunctionFileWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/TabulatedFunctionFileInputStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/FunctionsIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/FunctionsIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/TabulatedFunctionFileOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/TabulatedFunctionFileOutputStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +62,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.TabulatedFunctionFileInputStream.executor": "Run",
+    "Application.TabulatedFunctionFileOutputStream.executor": "Run",
     "Application.TabulatedFunctionFileWriter.executor": "Run",
     "JUnit.All in jabalab.lr2.executor": "Coverage",
     "JUnit.ArrayTabulatedFunctionTest.executor": "Run",
@@ -98,7 +101,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "dev__Y",
+    "git-widget-placeholder": "dev__X",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Ученик/OOP-Labs",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -113,6 +116,10 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Ученик\OOP-Labs\input" />
+      <recent name="D:\Ученик\OOP-Labs\binary function.bin" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.ssau.tk.jabalab.lr2.operations" />
       <recent name="ru.ssau.tk.jabalab.lr2.functions" />
@@ -121,7 +128,7 @@
       <recent name="ru.ssau.tk.jabalab.lr2.functions" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TabulatedFunctionFileWriter">
+  <component name="RunManager">
     <configuration name="TabulatedFunctionFileWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.io.TabulatedFunctionFileWriter" />
       <module name="jabalab.lr2" />
@@ -281,39 +288,39 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginFunctionTest.ic" NAME="ChaplyginFunctionTest Coverage Results" MODIFIED="1728166336376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/OOP_Labs$ConstantFunctionTest.ic" NAME="ConstantFunctionTest Coverage Results" MODIFIED="1728420732645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
-    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1729702823936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2 in jabalab.lr2 Coverage Results" MODIFIED="1729629054739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP_Labs$UnitFunctionTest.ic" NAME="UnitFunctionTest Coverage Results" MODIFIED="1728420617802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_functions_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2.functions in jabalab.lr2 Coverage Results" MODIFIED="1729624824475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/OOP_Labs$LinkedListTabulatedFunctionTest.ic" NAME="LinkedListTabulatedFunctionTest Coverage Results" MODIFIED="1728507794467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/OOP_Labs$CompositeFunctionTest.ic" NAME="CompositeFunctionTest Coverage Results" MODIFIED="1728502998838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodFunctionTest.ic" NAME="ChaplyginMethodFunctionTest Coverage Results" MODIFIED="1728552132925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/LR2$LinkedListTabulatedFunctionTest_testConstructorWithMismatchedArrays.ic" NAME="LinkedListTabulatedFunctionTest.testConstructorWithMismatchedArrays Coverage Results" MODIFIED="1729624091597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginFunctionTest.ic" NAME="ChaplyginFunctionTest Coverage Results" MODIFIED="1728166336376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_functions_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2.functions in jabalab.lr2 Coverage Results" MODIFIED="1729624824475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$UnitFunctionTest.ic" NAME="UnitFunctionTest Coverage Results" MODIFIED="1728420617802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/LR2$All_in_jabalab_lr2.ic" NAME="All in jabalab.lr2 Coverage Results" MODIFIED="1729633984949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/OOP_Labs$LinkedListTabulatedFunctionTest.ic" NAME="LinkedListTabulatedFunctionTest Coverage Results" MODIFIED="1728507794467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodTest.ic" NAME="ChaplyginMethodTest Coverage Results" MODIFIED="1728117566872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodFunctionTest.ic" NAME="ChaplyginMethodFunctionTest Coverage Results" MODIFIED="1728552132925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/OOP_Labs$ArrayTabulatedFunctionTest.ic" NAME="ArrayTabulatedFunctionTest Coverage Results" MODIFIED="1728570192159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/LR2$LinkedListTabulatedFunctionTest_testConstructorWithMismatchedArrays.ic" NAME="LinkedListTabulatedFunctionTest.testConstructorWithMismatchedArrays Coverage Results" MODIFIED="1729624091597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1729448911190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodTest.ic" NAME="ChaplyginMethodTest Coverage Results" MODIFIED="1728117566872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/OOP_Labs$ConstantFunctionTest.ic" NAME="ConstantFunctionTest Coverage Results" MODIFIED="1728420732645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
   </component>
