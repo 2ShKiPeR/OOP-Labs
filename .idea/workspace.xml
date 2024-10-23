@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="task2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/TabulatedFunctionFileOutputStream.java" afterDir="false" />
+    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="added input/output">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/TabulatedFunctionFileWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input" beforeDir="false" afterPath="$PROJECT_DIR$/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/FunctionsIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/io/FunctionsIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exceptions/ArrayIsNotSortedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exceptions/DifferentLengthOfArraysException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exceptions/InterpolationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/AbstractTabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/AbstractTabulatedFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/operations/TabulatedFunctionOperationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/operations/TabulatedFunctionOperationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/AbstractTabulatedFunctionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/AbstractTabulatedFunctionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest$TestMathFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest$TestMathFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunctionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest$TestMathFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest$TestMathFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/operations/TabulatedFunctionOperationServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/operations/TabulatedFunctionOperationServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.All in OOP-Labs.executor": "Run",
+    "Application.TabulatedFunctionFileWriter.executor": "Run",
     "JUnit.All in jabalab.lr2.executor": "Coverage",
     "JUnit.ArrayTabulatedFunctionTest.executor": "Run",
     "JUnit.ArrayTabulatedFunctionTest.interpolateTest.executor": "Run",
@@ -114,7 +98,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "dev__X",
+    "git-widget-placeholder": "dev__Y",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Ученик/OOP-Labs",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -137,12 +121,23 @@
       <recent name="ru.ssau.tk.jabalab.lr2.functions" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="All in OOP-Labs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OOP-Labs" />
+  <component name="RunManager" selected="Application.TabulatedFunctionFileWriter">
+    <configuration name="TabulatedFunctionFileWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.io.TabulatedFunctionFileWriter" />
+      <module name="jabalab.lr2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in jabalab.lr2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jabalab.lr2" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,22 +154,6 @@
       <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.operations" />
       <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.operations.TabulatedFunctionOperationServiceTest" />
       <option name="METHOD_NAME" value="test10" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TabulatedFunctionOperationServiceTest.test14" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jabalab.lr2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.operations.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.operations" />
-      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.operations.TabulatedFunctionOperationServiceTest" />
-      <option name="METHOD_NAME" value="test14" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -211,19 +190,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in OOP-Labs" />
+      <item itemvalue="Application.TabulatedFunctionFileWriter" />
+      <item itemvalue="JUnit.All in jabalab.lr2" />
       <item itemvalue="JUnit.TabulatedFunctionOperationServiceTest.test10" />
-      <item itemvalue="JUnit.TabulatedFunctionOperationServiceTest.test14" />
       <item itemvalue="JUnit.TabulatedFunctionOperationServiceTest.test9" />
       <item itemvalue="JUnit.ru.ssau.tk.jabalab.lr2 in jabalab.lr2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in OOP-Labs" />
+        <item itemvalue="Application.TabulatedFunctionFileWriter" />
+        <item itemvalue="JUnit.All in jabalab.lr2" />
         <item itemvalue="JUnit.ru.ssau.tk.jabalab.lr2 in jabalab.lr2" />
         <item itemvalue="JUnit.TabulatedFunctionOperationServiceTest.test9" />
         <item itemvalue="JUnit.TabulatedFunctionOperationServiceTest.test10" />
-        <item itemvalue="JUnit.TabulatedFunctionOperationServiceTest.test14" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729634020622</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added input/output">
+      <option name="closed" value="true" />
+      <created>1729702623037</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729702623037</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +255,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task2" />
-    <option name="LAST_COMMIT_MESSAGE" value="task2" />
+    <MESSAGE value="added input/output" />
+    <option name="LAST_COMMIT_MESSAGE" value="added input/output" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -293,39 +281,39 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1729702823936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginFunctionTest.ic" NAME="ChaplyginFunctionTest Coverage Results" MODIFIED="1728166336376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$ConstantFunctionTest.ic" NAME="ConstantFunctionTest Coverage Results" MODIFIED="1728420732645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2 in jabalab.lr2 Coverage Results" MODIFIED="1729629054739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP_Labs$LinkedListTabulatedFunctionTest.ic" NAME="LinkedListTabulatedFunctionTest Coverage Results" MODIFIED="1728507794467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/OOP_Labs$CompositeFunctionTest.ic" NAME="CompositeFunctionTest Coverage Results" MODIFIED="1728502998838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/LR2$LinkedListTabulatedFunctionTest_testConstructorWithMismatchedArrays.ic" NAME="LinkedListTabulatedFunctionTest.testConstructorWithMismatchedArrays Coverage Results" MODIFIED="1729624091597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginFunctionTest.ic" NAME="ChaplyginFunctionTest Coverage Results" MODIFIED="1728166336376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/OOP_Labs$UnitFunctionTest.ic" NAME="UnitFunctionTest Coverage Results" MODIFIED="1728420617802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_functions_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2.functions in jabalab.lr2 Coverage Results" MODIFIED="1729624824475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP_Labs$UnitFunctionTest.ic" NAME="UnitFunctionTest Coverage Results" MODIFIED="1728420617802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/LR2$All_in_jabalab_lr2.ic" NAME="All in jabalab.lr2 Coverage Results" MODIFIED="1729633984949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodTest.ic" NAME="ChaplyginMethodTest Coverage Results" MODIFIED="1728117566872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/OOP_Labs$CompositeFunctionTest.ic" NAME="CompositeFunctionTest Coverage Results" MODIFIED="1728502998838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodFunctionTest.ic" NAME="ChaplyginMethodFunctionTest Coverage Results" MODIFIED="1728552132925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/LR2$All_in_jabalab_lr2.ic" NAME="All in jabalab.lr2 Coverage Results" MODIFIED="1729633984949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP_Labs$LinkedListTabulatedFunctionTest.ic" NAME="LinkedListTabulatedFunctionTest Coverage Results" MODIFIED="1728507794467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/OOP_Labs$ArrayTabulatedFunctionTest.ic" NAME="ArrayTabulatedFunctionTest Coverage Results" MODIFIED="1728570192159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/OOP_Labs$ConstantFunctionTest.ic" NAME="ConstantFunctionTest Coverage Results" MODIFIED="1728420732645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/LR2$LinkedListTabulatedFunctionTest_testConstructorWithMismatchedArrays.ic" NAME="LinkedListTabulatedFunctionTest.testConstructorWithMismatchedArrays Coverage Results" MODIFIED="1729624091597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1729448911190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodTest.ic" NAME="ChaplyginMethodTest Coverage Results" MODIFIED="1728117566872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
   </component>
