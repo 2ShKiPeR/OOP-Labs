@@ -1,4 +1,6 @@
 package ru.ssau.tk.jabalab.lr2.functions;
+import ru.ssau.tk.jabalab.lr2.exceptions.InterpolationException;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
@@ -73,9 +75,11 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
 
     // Конструктор для инициализации из массивов xValues и yValues
     public LinkedListTabulatedFunction(double[] xValues, double[] yValues) {
+        checkLengthIsTheSame(xValues, yValues);
         if (xValues.length != yValues.length || xValues.length < 2) {
             throw new IllegalArgumentException("Mismatched or insufficient arrays");
         }
+        checkSorted(xValues);
         for (int i = 0; i < xValues.length; i++) {
             addNode(xValues[i], yValues[i]);
         }
@@ -221,6 +225,8 @@ public class LinkedListTabulatedFunction extends AbstractTabulatedFunction imple
             return getY(0); // Вернуть единственное значение, если только один узел
         }
         Node floorNode = getNode(floorIndex); // Узел с наибольшим x
+        if (x < floorNode.x || x > floorNode.next.x)
+            throw new InterpolationException("x out of bounds");
         Node ceilingNode = floorIndex + 1 < count ? getNode(floorIndex + 1) : floorNode; // Узел с наименьшим x
         return interpolate(x, floorNode.x, ceilingNode.x, floorNode.y, ceilingNode.y); // Интерполяция между узлами
     }

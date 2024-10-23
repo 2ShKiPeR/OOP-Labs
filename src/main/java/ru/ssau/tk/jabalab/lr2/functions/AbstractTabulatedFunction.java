@@ -1,7 +1,7 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 
-import exceptions.DifferentLengthOfArraysException;
-import exceptions.ArrayIsNotSortedException;
+import ru.ssau.tk.jabalab.lr2.exceptions.DifferentLengthOfArraysException;
+import ru.ssau.tk.jabalab.lr2.exceptions.ArrayIsNotSortedException;
 
 public abstract class AbstractTabulatedFunction implements TabulatedFunction {
     protected abstract int floorIndexOfX(double x);

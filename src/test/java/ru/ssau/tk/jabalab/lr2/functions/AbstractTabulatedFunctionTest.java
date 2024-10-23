@@ -1,7 +1,7 @@
 package ru.ssau.tk.jabalab.lr2.functions;
 
-import exceptions.ArrayIsNotSortedException;
-import exceptions.DifferentLengthOfArraysException;
+import ru.ssau.tk.jabalab.lr2.exceptions.ArrayIsNotSortedException;
+import ru.ssau.tk.jabalab.lr2.exceptions.DifferentLengthOfArraysException;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
