@@ -387,6 +387,24 @@ public class LinkedListTabulatedFunctionTest {
             assertNotNull(point);
         }
     }
+    // Тестирование метода getHead
+    @Test
+    public void testGetHead() {
+        LinkedListTabulatedFunction emptyFunction = new LinkedListTabulatedFunction();
+        assertNull(emptyFunction.getHead()); // Проверка, что голова списка пустого объекта равна null
+
+        double[] xValues = {1.0, 2.0, 3.0};
+        double[] yValues = {2.0, 4.0, 6.0};
+        function = new LinkedListTabulatedFunction(xValues, yValues);
+
+        // Проверка, что голова не равна null
+        assertNotNull(function.getHead());
+
+        // Проверка, что значение x головы совпадает с первым значением массива xValues
+        // и значение y соответствует первому значению массива yValues, используя getX и getY
+        assertEquals(1.0, function.getX(0)); // Проверка, что значение x головы списка соответствует первому значению
+        assertEquals(2.0, function.getY(0)); // Проверка, что значение y головы списка соответствует первому значению
+    }
 
 }
 
