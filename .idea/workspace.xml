@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/concurrent/ReadWriteTaskExecutorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/concurrent/SynchronizedTabulatedFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/concurrent/SynchronizedTabulatedFunctionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +86,7 @@
     "JUnit.LinkedListTabulatedFunctionTest.testInterpolate.executor": "Debug",
     "JUnit.LinkedListTabulatedFunctionTest.testSetYOutOfBounds.executor": "Run",
     "JUnit.ReadWriteTaskExecutorTest.executor": "Coverage",
+    "JUnit.SynchronizedTabulatedFunctionTest.testIterator.executor": "Debug",
     "JUnit.TabulatedFunctionOperationServiceTest.test10.executor": "Run",
     "JUnit.TabulatedFunctionOperationServiceTest.test12.executor": "Run",
     "JUnit.TabulatedFunctionOperationServiceTest.test13.executor": "Run",
@@ -277,7 +279,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1730040231762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1730042866870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2 in jabalab.lr2 Coverage Results" MODIFIED="1729629054739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.*</FILTER>
     </SUITE>
