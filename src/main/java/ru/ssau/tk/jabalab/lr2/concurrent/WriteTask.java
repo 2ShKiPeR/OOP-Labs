@@ -1,11 +1,3 @@
-/*
- * Copyright (c) 2024. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
- * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
- * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
- * Vestibulum commodo. Ut rhoncus gravida arcu.
- */
-
 package ru.ssau.tk.jabalab.lr2.concurrent;
 import ru.ssau.tk.jabalab.lr2.functions.TabulatedFunction;
 
@@ -18,10 +10,11 @@ public class WriteTask implements Runnable{
     }
     @Override
     public void run(){
-        for(int i = 0; i < function.getCount(); i++)
-        {
-            function.setY(i, value);
-            System.out.printf("Writing for index %d complete", i);
+        for(int i = 0; i < function.getCount(); i++) {
+            synchronized (function) {
+                function.setY(i, value);
+                System.out.printf("Writing for index %d complete\n", i);
+            }
         }
     }
 }
