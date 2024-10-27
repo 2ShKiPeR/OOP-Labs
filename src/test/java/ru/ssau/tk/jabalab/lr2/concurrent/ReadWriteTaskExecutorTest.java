@@ -65,7 +65,7 @@ public class ReadWriteTaskExecutorTest {
         mainThread.start();
 
         // Должны подождать немного, чтобы дать время потокам завершиться
-        mainThread.join(1000);  // задайте таймаут на 1 секунду, чтобы потоки могли завершиться
+        mainThread.join(1000);  // задаём таймаут на 1 секунду, чтобы потоки могли завершиться
 
         // Создаём экземпляр функции, чтобы проверить итоговые значения
         LinkedListTabulatedFunction function = new LinkedListTabulatedFunction(new ConstantFunction(-1), 1, 1000, 1000);
