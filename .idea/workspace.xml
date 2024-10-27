@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/concurrent/ReadTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunctionTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,61 +58,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.LinkedListTabulatedFunctionSerialization.executor": "Coverage",
-    "Application.TabulatedFunctionFileInputStream.executor": "Coverage",
-    "Application.TabulatedFunctionFileOutputStream.executor": "Run",
-    "Application.TabulatedFunctionFileWriter.executor": "Coverage",
-    "JUnit.AbstractTabulatedFunctionTest.executor": "Coverage",
-    "JUnit.All in jabalab.lr2.executor": "Coverage",
-    "JUnit.ArrayTabulatedFunctionTest.executor": "Run",
-    "JUnit.ArrayTabulatedFunctionTest.interpolateTest.executor": "Run",
-    "JUnit.ChaplyginFunctionTest.executor": "Run",
-    "JUnit.ChaplyginFunctionTest.testSingleValue.executor": "Run",
-    "JUnit.ChaplyginMethodFunctionTest.executor": "Run",
-    "JUnit.ChaplyginMethodTest.executor": "Run",
-    "JUnit.ChaplyginMethodTest.testApplyEdgeCases.executor": "Run",
-    "JUnit.CompositeFunctionTest.executor": "Coverage",
-    "JUnit.CompositeFunctionTest.testCompositeFunction.executor": "Debug",
-    "JUnit.ConstantFunctionTest.executor": "Coverage",
-    "JUnit.IdentityFunctionTest.executor": "Run",
-    "JUnit.LinkedListTabulatedFunctionTest (1).executor": "Run",
-    "JUnit.LinkedListTabulatedFunctionTest.executor": "Run",
-    "JUnit.LinkedListTabulatedFunctionTest.interpolateFloorTest.executor": "Run",
-    "JUnit.LinkedListTabulatedFunctionTest.testConstructorWithMismatchedArrays.executor": "Coverage",
-    "JUnit.LinkedListTabulatedFunctionTest.testInterpolate.executor": "Debug",
-    "JUnit.LinkedListTabulatedFunctionTest.testSetYOutOfBounds.executor": "Run",
-    "JUnit.TabulatedFunctionOperationServiceTest.test10.executor": "Run",
-    "JUnit.TabulatedFunctionOperationServiceTest.test12.executor": "Run",
-    "JUnit.TabulatedFunctionOperationServiceTest.test13.executor": "Run",
-    "JUnit.TabulatedFunctionOperationServiceTest.test14.executor": "Run",
-    "JUnit.TabulatedFunctionOperationServiceTest.test7.executor": "Run",
-    "JUnit.TabulatedFunctionOperationServiceTest.test8.executor": "Run",
-    "JUnit.TabulatedFunctionOperationServiceTest.test9.executor": "Run",
-    "JUnit.UnitFunctionTest.executor": "Coverage",
-    "JUnit.ZeroFunctionTest.executor": "Run",
-    "JUnit.factory in OOP-Labs.executor": "Run",
-    "JUnit.java in OOP-Labs.executor": "Coverage",
-    "JUnit.ru.ssau.tk.jabalab.lr2 in jabalab.lr2.executor": "Run",
-    "JUnit.ru.ssau.tk.jabalab.lr2.functions in jabalab.lr2.executor": "Coverage",
-    "Maven.Unknown [clean].executor": "Run",
-    "Maven.Unknown [test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "dev__X",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Ученик/OOP-Labs",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "D:/Ученик/OOP-Labs/src/main/java/ru/ssau/tk/_NAME_/_PROJECT_/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "copyright"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LinkedListTabulatedFunctionSerialization.executor&quot;: &quot;Coverage&quot;,
+    &quot;Application.TabulatedFunctionFileInputStream.executor&quot;: &quot;Coverage&quot;,
+    &quot;Application.TabulatedFunctionFileOutputStream.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TabulatedFunctionFileWriter.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.AbstractTabulatedFunctionTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in jabalab.lr2.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ArrayTabulatedFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArrayTabulatedFunctionTest.interpolateTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ChaplyginFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ChaplyginFunctionTest.testSingleValue.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ChaplyginMethodFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ChaplyginMethodTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ChaplyginMethodTest.testApplyEdgeCases.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CompositeFunctionTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.CompositeFunctionTest.testCompositeFunction.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ConstantFunctionTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.IdentityFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTabulatedFunctionTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTabulatedFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTabulatedFunctionTest.interpolateFloorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LinkedListTabulatedFunctionTest.testConstructorWithMismatchedArrays.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.LinkedListTabulatedFunctionTest.testInterpolate.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.LinkedListTabulatedFunctionTest.testSetYOutOfBounds.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TabulatedFunctionOperationServiceTest.test10.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TabulatedFunctionOperationServiceTest.test12.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TabulatedFunctionOperationServiceTest.test13.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TabulatedFunctionOperationServiceTest.test14.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TabulatedFunctionOperationServiceTest.test7.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TabulatedFunctionOperationServiceTest.test8.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TabulatedFunctionOperationServiceTest.test9.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UnitFunctionTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ZeroFunctionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.factory in OOP-Labs.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in OOP-Labs.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ru.ssau.tk.jabalab.lr2 in jabalab.lr2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ru.ssau.tk.jabalab.lr2.functions in jabalab.lr2.executor&quot;: &quot;Coverage&quot;,
+    &quot;Maven.Unknown [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unknown [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev__X&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Ученик/OOP-Labs&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Ученик/OOP-Labs/src/main/java/ru/ssau/tk/_NAME_/_PROJECT_/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -274,7 +273,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1729773725737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/OOP_Labs$java_in_OOP_Labs.ic" NAME="java in OOP-Labs Coverage Results" MODIFIED="1729785016237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2 in jabalab.lr2 Coverage Results" MODIFIED="1729629054739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.*</FILTER>
     </SUITE>
