@@ -1,5 +1,7 @@
 package ru.ssau.tk.jabalab.lr2.operations;
 
+import ru.ssau.tk.jabalab.lr2.concurrent.SynchronizedTabulatedFunction;
+import ru.ssau.tk.jabalab.lr2.functions.ArrayTabulatedFunction;
 import ru.ssau.tk.jabalab.lr2.functions.TabulatedFunction;
 import ru.ssau.tk.jabalab.lr2.functions.factory.TabulatedFunctionFactory;
 import ru.ssau.tk.jabalab.lr2.functions.factory.ArrayTabulatedFunctionFactory;
@@ -47,5 +49,12 @@ public class TabulatedDifferentialOperator implements DifferentialOperator<Tabul
 
         // Создаем новую табулированную функцию с полученными значениями
         return factory.create(xValues, yValues);
+    }
+
+    public synchronized TabulatedFunction deriveSynchronously(TabulatedFunction function) {
+        if (!(function instanceof SynchronizedTabulatedFunction)) {
+            function = new SynchronizedTabulatedFunction(function);
+        }
+        return ((SynchronizedTabulatedFunction) function).doSynchronously(this::derive);
     }
 }

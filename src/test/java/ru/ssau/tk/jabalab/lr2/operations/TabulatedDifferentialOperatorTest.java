@@ -1,9 +1,11 @@
 package ru.ssau.tk.jabalab.lr2.operations;
 
 import org.junit.jupiter.api.Test;
+import ru.ssau.tk.jabalab.lr2.concurrent.SynchronizedTabulatedFunction;
 import ru.ssau.tk.jabalab.lr2.functions.ArrayTabulatedFunction;
 import ru.ssau.tk.jabalab.lr2.functions.LinkedListTabulatedFunction;
 import ru.ssau.tk.jabalab.lr2.functions.TabulatedFunction;
+import ru.ssau.tk.jabalab.lr2.functions.UnitFunction;
 import ru.ssau.tk.jabalab.lr2.functions.factory.ArrayTabulatedFunctionFactory;
 import ru.ssau.tk.jabalab.lr2.functions.factory.LinkedListTabulatedFunctionFactory;
 
@@ -61,3 +63,4 @@ public class TabulatedDifferentialOperatorTest {
         assertEquals(linkedListFactory, operator.getFactory()); // Убедимся, что установленная фабрика возвращается
     }
 }
+

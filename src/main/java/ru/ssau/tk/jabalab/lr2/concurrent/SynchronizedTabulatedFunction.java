@@ -1,11 +1,3 @@
-/*
- * Copyright (c) 2024. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
- * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
- * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
- * Vestibulum commodo. Ut rhoncus gravida arcu.
- */
-
 package ru.ssau.tk.jabalab.lr2.concurrent;
 
 import ru.ssau.tk.jabalab.lr2.functions.Point;
@@ -104,6 +96,16 @@ public class SynchronizedTabulatedFunction implements TabulatedFunction {
                     return point;
                 }
             };
+        }
+    }
+
+    public interface Operation<T> {
+        T apply(SynchronizedTabulatedFunction func);
+    }
+
+    public <T> T doSynchronously(Operation<? extends T> op) {
+        synchronized (func) {
+            return op.apply(this);
         }
     }
 }
