@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="Integration">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/exceptions/ArrayIsNotSortedExceptionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/exceptions/DifferentLengthOfArraysExceptionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/exceptions/InconsistentFunctionsExceptionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/exceptions/InterpolationExceptionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/exceptions/InconsistentFunctionsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/exceptions/InconsistentFunctionsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/exceptions/InterpolationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/exceptions/InterpolationException.java" afterDir="false" />
-    </list>
+    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="added tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +130,7 @@
       <recent name="ru.ssau.tk.jabalab.lr2.functions" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ru.ssau.tk.jabalab.lr2 in jabalab.lr2">
+  <component name="RunManager" selected="JUnit.All in jabalab.lr2">
     <configuration name="All in jabalab.lr2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jabalab.lr2" />
       <option name="PACKAGE_NAME" value="" />
@@ -162,6 +154,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MathFunctionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jabalab.lr2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.functions.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.functions.factory" />
+      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.functions.factory.MathFunctionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MultiplyingTaskExecutorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jabalab.lr2" />
       <extension name="coverage">
@@ -173,22 +180,6 @@
       <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.concurrent" />
       <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.concurrent.MultiplyingTaskExecutorTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiplyingTaskExecutorTest.testMultiplyingTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jabalab.lr2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.concurrent.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.concurrent" />
-      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.concurrent.MultiplyingTaskExecutorTest" />
-      <option name="METHOD_NAME" value="testMultiplyingTask" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -209,18 +200,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ArrayIsNotSortedExceptionTest" />
+      <item itemvalue="JUnit.MathFunctionTest" />
       <item itemvalue="JUnit.MultiplyingTaskExecutorTest" />
-      <item itemvalue="JUnit.MultiplyingTaskExecutorTest.testMultiplyingTask" />
       <item itemvalue="JUnit.All in jabalab.lr2" />
       <item itemvalue="JUnit.ru.ssau.tk.jabalab.lr2 in jabalab.lr2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in jabalab.lr2" />
+        <item itemvalue="JUnit.MathFunctionTest" />
         <item itemvalue="JUnit.ru.ssau.tk.jabalab.lr2 in jabalab.lr2" />
         <item itemvalue="JUnit.ArrayIsNotSortedExceptionTest" />
-        <item itemvalue="JUnit.All in jabalab.lr2" />
         <item itemvalue="JUnit.MultiplyingTaskExecutorTest" />
-        <item itemvalue="JUnit.MultiplyingTaskExecutorTest.testMultiplyingTask" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730317179925</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added tests">
+      <option name="closed" value="true" />
+      <created>1730318318095</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730318318095</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +293,8 @@
     <MESSAGE value="task2" />
     <MESSAGE value="added input/output" />
     <MESSAGE value="Integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integration" />
+    <MESSAGE value="added tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -325,7 +325,7 @@
     <SUITE FILE_PATH="coverage/OOP_Labs$ConstantFunctionTest.ic" NAME="ConstantFunctionTest Coverage Results" MODIFIED="1728420732645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2 in jabalab.lr2 Coverage Results" MODIFIED="1730318167959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2 in jabalab.lr2 Coverage Results" MODIFIED="1730318272925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_functions_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2.functions in jabalab.lr2 Coverage Results" MODIFIED="1729624824475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
