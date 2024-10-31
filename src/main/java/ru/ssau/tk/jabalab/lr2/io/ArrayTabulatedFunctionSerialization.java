@@ -1,6 +1,6 @@
 package ru.ssau.tk.jabalab.lr2.io;
 
-import ru.ssau.tk.jabalab.lr2.functions.ArrayTabulatedFunction;
+import  ru.ssau.tk.jabalab.lr2.functions.ArrayTabulatedFunction;
 import ru.ssau.tk.jabalab.lr2.functions.TabulatedFunction;
 import ru.ssau.tk.jabalab.lr2.functions.factory.ArrayTabulatedFunctionFactory;
 import ru.ssau.tk.jabalab.lr2.operations.TabulatedDifferentialOperator;
