@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: LR2
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 1234
+    url: jdbc:postgresql://localhost:5432/postgres
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update

@@ -4,7 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="added tests" />
+    <list default="true" id="25ee6a3d-c90a-47e1-8039-02991ddca1f8" name="Changes" comment="added tests">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/DTO/MathFunctionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/DTO/PointDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/LR5Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/model/MathFunctionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/model/PointEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/repository/MathFunctionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/repository/PointRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/services/MathFunctionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/services/MathFunctionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/services/PointMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/services/PointService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/sql/migration/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/DTO/MathFunctionDTOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/DTO/PointDTOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/TestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/TestcontainersConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/repository/MathFunctionRepositoryIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/repository/MathFunctionRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/repository/PointRepositoryIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/repository/PointRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/service/MathFunctionMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/service/MathFunctionServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/service/PointMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ssau/tk/jabalab/lr2/service/PointServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/sql/math_functions.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/sql/points.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/sql/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_10_2024_22_19_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_10_2024_22_19__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/concurrent/Integration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ssau/tk/jabalab/lr2/concurrent/Integration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/AbstractTabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/AbstractTabulatedFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ArrayTabulatedFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ChaplyginMethodFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ChaplyginMethodFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/CompositeFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/CompositeFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ConstantFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ConstantFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/IdentityFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/IdentityFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/Insertable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/Insertable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/LinkedListTabulatedFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/MathFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/MathFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/Removable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/Removable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/SimpleIterationFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/SimpleIterationFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/SqrFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/SqrFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/TabulatedFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/TabulatedFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/UnitFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/UnitFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ZeroFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/ZeroFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/factory/ArrayTabulatedFunctionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/factory/ArrayTabulatedFunctionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/factory/LinkedListTabulatedFunctionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/factory/LinkedListTabulatedFunctionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/factory/TabulatedFunctionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/functions/factory/TabulatedFunctionFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/operations/DifferentialOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/operations/DifferentialOperator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/operations/TabulatedDifferentialOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/operations/TabulatedDifferentialOperator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/operations/TabulatedFunctionOperationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/ssau/tk/jabalab/lr2/operations/TabulatedFunctionOperationService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,9 +77,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Exception" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -44,7 +108,7 @@
     <scope name="Kostya Simonov" pattern="" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -60,7 +124,7 @@
     "Application.TabulatedFunctionFileInputStream.executor": "Run",
     "Application.TabulatedFunctionFileOutputStream.executor": "Run",
     "Application.TabulatedFunctionFileWriter.executor": "Run",
-    "JUnit.All in jabalab.lr2.executor": "Debug",
+    "JUnit.All in jabalab.lr2.executor": "Coverage",
     "JUnit.ArrayIsNotSortedExceptionTest.executor": "Run",
     "JUnit.ArrayTabulatedFunctionTest.executor": "Run",
     "JUnit.ArrayTabulatedFunctionTest.interpolateTest.executor": "Run",
@@ -73,15 +137,18 @@
     "JUnit.CompositeFunctionTest.testCompositeFunction.executor": "Debug",
     "JUnit.ConstantFunctionTest.executor": "Coverage",
     "JUnit.IdentityFunctionTest.executor": "Run",
+    "JUnit.IntegrationTest.executor": "Run",
     "JUnit.LinkedListTabulatedFunctionTest (1).executor": "Run",
     "JUnit.LinkedListTabulatedFunctionTest.executor": "Run",
     "JUnit.LinkedListTabulatedFunctionTest.interpolateFloorTest.executor": "Run",
     "JUnit.LinkedListTabulatedFunctionTest.testConstructorWithMismatchedArrays.executor": "Coverage",
     "JUnit.LinkedListTabulatedFunctionTest.testInterpolate.executor": "Debug",
     "JUnit.LinkedListTabulatedFunctionTest.testSetYOutOfBounds.executor": "Run",
+    "JUnit.MathFunctionTest.executor": "Run",
     "JUnit.MultiplyingTaskExecutorTest.executor": "Run",
     "JUnit.MultiplyingTaskExecutorTest.main.executor": "Debug",
     "JUnit.MultiplyingTaskExecutorTest.testMultiplyingTask.executor": "Run",
+    "JUnit.PointRepositoryIT.executor": "Run",
     "JUnit.TabulatedDifferentialOperatorTest.executor": "Coverage",
     "JUnit.TabulatedFunctionOperationServiceTest.test10.executor": "Run",
     "JUnit.TabulatedFunctionOperationServiceTest.test12.executor": "Run",
@@ -93,28 +160,44 @@
     "JUnit.UnitFunctionTest.executor": "Coverage",
     "JUnit.ZeroFunctionTest.executor": "Run",
     "JUnit.java in OOP-Labs.executor": "Run",
+    "JUnit.java in jabalab.lr2.executor": "Run",
     "JUnit.ru.ssau.tk.jabalab.lr2 in jabalab.lr2.executor": "Coverage",
     "JUnit.ru.ssau.tk.jabalab.lr2.functions in jabalab.lr2.executor": "Coverage",
     "Maven.Unknown [clean].executor": "Run",
     "Maven.Unknown [test].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.LR5Application.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "dev__Y",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Ученик/OOP-Labs",
+    "last_opened_file_path": "C:/Users/AlyaChe/IdeaProjects/iBarBook",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/Ученик/OOP-Labs/src/main/java/ru/ssau/tk/_NAME_/_PROJECT_/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "copyright"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.ssau.tk.jabalab.lr2" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -130,7 +213,7 @@
       <recent name="ru.ssau.tk.jabalab.lr2.functions" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in jabalab.lr2">
+  <component name="RunManager" selected="JUnit.PointRepositoryIT">
     <configuration name="All in jabalab.lr2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jabalab.lr2" />
       <option name="PACKAGE_NAME" value="" />
@@ -139,37 +222,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayIsNotSortedExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jabalab.lr2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.exceptions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.exceptions" />
-      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.exceptions.ArrayIsNotSortedExceptionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathFunctionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jabalab.lr2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.functions.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.functions.factory" />
-      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.functions.factory.MathFunctionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MultiplyingTaskExecutorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jabalab.lr2" />
       <extension name="coverage">
         <pattern>
@@ -178,40 +231,62 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.concurrent" />
-      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.concurrent.MultiplyingTaskExecutorTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.concurrent.IntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ru.ssau.tk.jabalab.lr2 in jabalab.lr2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PointRepositoryIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="jabalab.lr2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2.repository" />
+      <option name="MAIN_CLASS_NAME" value="ru.ssau.tk.jabalab.lr2.repository.PointRepositoryIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in jabalab.lr2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jabalab.lr2" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LR5Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="jabalab.lr2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.ssau.tk.jabalab.lr2.LR5Application" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.ssau.tk.jabalab.lr2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.ssau.tk.jabalab.lr2" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ArrayIsNotSortedExceptionTest" />
-      <item itemvalue="JUnit.MathFunctionTest" />
-      <item itemvalue="JUnit.MultiplyingTaskExecutorTest" />
+      <item itemvalue="JUnit.PointRepositoryIT" />
+      <item itemvalue="JUnit.java in jabalab.lr2" />
+      <item itemvalue="JUnit.IntegrationTest" />
       <item itemvalue="JUnit.All in jabalab.lr2" />
-      <item itemvalue="JUnit.ru.ssau.tk.jabalab.lr2 in jabalab.lr2" />
+      <item itemvalue="Spring Boot.LR5Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PointRepositoryIT" />
+        <item itemvalue="JUnit.java in jabalab.lr2" />
+        <item itemvalue="Spring Boot.LR5Application" />
+        <item itemvalue="JUnit.IntegrationTest" />
         <item itemvalue="JUnit.All in jabalab.lr2" />
-        <item itemvalue="JUnit.MathFunctionTest" />
-        <item itemvalue="JUnit.ru.ssau.tk.jabalab.lr2 in jabalab.lr2" />
-        <item itemvalue="JUnit.ArrayIsNotSortedExceptionTest" />
-        <item itemvalue="JUnit.MultiplyingTaskExecutorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -231,6 +306,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727198592832</updated>
+      <workItem from="1730731853406" duration="15920000" />
+      <workItem from="1731445329024" duration="15264000" />
     </task>
     <task id="LOCAL-00001" summary="task2">
       <option name="closed" value="true" />
@@ -272,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730318318095</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added tests">
+      <option name="closed" value="true" />
+      <created>1730318695068</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730318695068</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +410,7 @@
     <SUITE FILE_PATH="coverage/OOP_Labs$ConstantFunctionTest.ic" NAME="ConstantFunctionTest Coverage Results" MODIFIED="1728420732645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/LR2$java_in_jabalab_lr2.ic" NAME="java in jabalab.lr2 Coverage Results" MODIFIED="1731529972529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/LR2$ru_ssau_tk_jabalab_lr2_in_jabalab_lr2.ic" NAME="ru.ssau.tk.jabalab.lr2 in jabalab.lr2 Coverage Results" MODIFIED="1730318272925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.*</FILTER>
     </SUITE>
@@ -343,7 +429,7 @@
     <SUITE FILE_PATH="coverage/OOP_Labs$ChaplyginMethodFunctionTest.ic" NAME="ChaplyginMethodFunctionTest Coverage Results" MODIFIED="1728552132925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/LR2$All_in_jabalab_lr2.ic" NAME="All in jabalab.lr2 Coverage Results" MODIFIED="1730317840852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/LR2$All_in_jabalab_lr2.ic" NAME="All in jabalab.lr2 Coverage Results" MODIFIED="1730318669835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/OOP_Labs$LinkedListTabulatedFunctionTest.ic" NAME="LinkedListTabulatedFunctionTest Coverage Results" MODIFIED="1728507794467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>ru.ssau.tk.jabalab.lr2.functions.*</FILTER>
     </SUITE>
