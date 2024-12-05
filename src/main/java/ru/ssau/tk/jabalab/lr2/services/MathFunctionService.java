@@ -3,7 +3,7 @@ package ru.ssau.tk.jabalab.lr2.services;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.ssau.tk.jabalab.lr2.DTO.MathFunctionDTO;
-import ru.ssau.tk.jabalab.lr2.model.MathFunctionEntity;
+import ru.ssau.tk.jabalab.lr2.entity.MathFunctionEntity;
 import ru.ssau.tk.jabalab.lr2.repository.MathFunctionRepository;
 
 

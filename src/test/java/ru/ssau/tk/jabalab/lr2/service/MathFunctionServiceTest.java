@@ -6,7 +6,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import ru.ssau.tk.jabalab.lr2.DTO.MathFunctionDTO;
-import ru.ssau.tk.jabalab.lr2.model.MathFunctionEntity;
+import ru.ssau.tk.jabalab.lr2.entity.MathFunctionEntity;
 import ru.ssau.tk.jabalab.lr2.repository.MathFunctionRepository;
 import ru.ssau.tk.jabalab.lr2.services.MathFunctionService;
 

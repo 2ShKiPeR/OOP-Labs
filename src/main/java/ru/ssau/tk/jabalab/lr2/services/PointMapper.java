@@ -1,7 +1,7 @@
 package ru.ssau.tk.jabalab.lr2.services;
 
 import ru.ssau.tk.jabalab.lr2.DTO.PointDTO;
-import ru.ssau.tk.jabalab.lr2.model.PointEntity;
+import ru.ssau.tk.jabalab.lr2.entity.PointEntity;
 
 public class PointMapper {
 

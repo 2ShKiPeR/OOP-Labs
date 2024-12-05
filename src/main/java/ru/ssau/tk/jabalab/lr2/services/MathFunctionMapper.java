@@ -2,7 +2,7 @@ package ru.ssau.tk.jabalab.lr2.services;
 
 
 import ru.ssau.tk.jabalab.lr2.DTO.MathFunctionDTO;
-import ru.ssau.tk.jabalab.lr2.model.MathFunctionEntity;
+import ru.ssau.tk.jabalab.lr2.entity.MathFunctionEntity;
 
 public class MathFunctionMapper {
 

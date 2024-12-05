@@ -6,8 +6,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import ru.ssau.tk.jabalab.lr2.model.MathFunctionEntity;
-import ru.ssau.tk.jabalab.lr2.model.PointEntity;
+import ru.ssau.tk.jabalab.lr2.entity.MathFunctionEntity;
+import ru.ssau.tk.jabalab.lr2.entity.PointEntity;
 
 import java.util.Collections;
 import java.util.List;

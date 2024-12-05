@@ -1,4 +1,4 @@
-package ru.ssau.tk.jabalab.lr2.model;
+package ru.ssau.tk.jabalab.lr2.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

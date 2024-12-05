@@ -1,17 +1,19 @@
-create schema if not exists labs;
+CREATE SCHEMA IF NOT EXISTS labs;
 
-create table labs.t_function(
-                                id serial primary key,
-                                c_function_type varchar(255),
-                                c_count integer check ( c_count >= 2 ),
-                                c_x_from double precision,
-                                c_x_to double precision
+CREATE SEQUENCE functions_id_seq;
+
+CREATE TABLE functions (
+                           id INT PRIMARY KEY DEFAULT nextval('functions_id_seq'),
+                           function_name VARCHAR(255),
+                           count INT CHECK (count >= 2),
+                           x_from DOUBLE PRECISION,
+                           x_to DOUBLE PRECISION
 );
 
-create table labs.t_point(
-                             id serial primary key,
-                             function_id integer,
-                             c_x_value double precision,
-                             c_y_value double precision,
-                             foreign key (function_id) references labs.t_function(id) on delete cascade
+CREATE TABLE point (
+                       id INT PRIMARY KEY DEFAULT nextval('point_id_seq'),
+                       function_id INT,
+                       x_val DOUBLE PRECISION,
+                       y_val DOUBLE PRECISION,
+                       FOREIGN KEY (function_id) REFERENCES labs.functions(id) ON DELETE CASCADE
 );

@@ -1,7 +1,7 @@
 package ru.ssau.tk.jabalab.lr2.service;
 
 import org.junit.jupiter.api.Test;
-import ru.ssau.tk.jabalab.lr2.model.MathFunctionEntity;
+import ru.ssau.tk.jabalab.lr2.entity.MathFunctionEntity;
 import ru.ssau.tk.jabalab.lr2.services.MathFunctionMapper;
 import ru.ssau.tk.jabalab.lr2.DTO.MathFunctionDTO;
 

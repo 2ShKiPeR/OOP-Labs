@@ -1,4 +1,3 @@
-
 CREATE SCHEMA IF NOT EXISTS labs;
 
 CREATE SEQUENCE functions_id_seq;
